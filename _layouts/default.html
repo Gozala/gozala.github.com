@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>{ page.title }</title>
+        <link type="text/css" rel="stylesheet" href="resources/css/style.css"/>
+        <script type="text/javascript" src="../require-js/lib/require.js"></script>
+    </head>
+    <body>
+        <div class="ribbon">
+            <a target="_blank" href="https://github.com/Gozala/taskhub">Fork me on GitHub</a>
+        </div>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a class="bookmark" href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

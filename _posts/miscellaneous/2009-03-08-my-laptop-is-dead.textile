@@ -1,0 +1,19 @@
+---
+layout: post
+title: My laptop is dead
+---
+
+The title explains self pretty well I believe. Unfortunately my old laptop died about two week ago so everything I was working on is blocked until I'll get a new one, ideally it will be on Monday. Fortunately HDD is alive so no work and important data has been lost. It's amazing, during this days I have discovered, that I have a lots of free time, but I don't know how to spend it. Last weekend was nightmare, as only thing I was doing was opening / closing my freedge's door. As I did not wanted to do the same during this weekend I have decided to find some solution to keep myself busy. First two ideas that came to my mind were:
+<ol>
+	<li>I can go <a href="http://www.oba.nl/" target="_blank">to library</a> and go on working on my <a href="http://rfobic.googlepages.com/bugzilla-install.html" target="_blank">bugzilla ubiquity command</a> using Emacs. Not a long time ago I have decided to learn Emacs and started doing it, so it was good idea for a productive weekend - "getting more familiar with Emacs" and working on ubiquity command. As far as I know Emacs is pre-installed on a Mac's. _(Not sure about it)_. So I went to libarary wit this plan, but unfortunately I discovered that use of console was restricted on library computers , I know there's nothing unexpected in this. Option 1 didn't  worked out  :(, but I had a second option as well :) .
+ </li>
+	<li><a href="https://bespin.mozilla.com/" target="_blank">Bespin</a> - Mozilla Labs experiment, an extensible web based code editor. As the only non-restricted app in library computers are browsers it was perfect solution, besides I really like the project _(I used to have a similar)_ and  I have some ideas around it. So getting more familiar with bespin was good target for a weekend. Unfortunately I was out of luck again :(. It's unbelievable but all the PCs in the library have outdated versions of Firefox >>  2.x  :( _(There is no canvas support in old browsers nor in safary nor in firefox so bespins is not going to work on this browsers)_</li>
+</ol>
+So I ended up typeing this borring blog post on a horrible iron keyboard :). What is the point of ll this ???
+h2. Update your browsers !!!!
+We need web based editor !!!! 
+
+
+ 
+
+P.S.: I'm bored, I'll try to find some inspiration to make some interesting photos, good luck to me !!!

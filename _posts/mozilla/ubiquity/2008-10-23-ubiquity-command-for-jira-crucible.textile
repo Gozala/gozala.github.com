@@ -1,0 +1,17 @@
+---
+layout: post
+title: Ubiquity command for JIRA & Crucible
+tags: ubiquity jira crucible
+---
+
+
+
+<span style="font-family:verdana;">So...</span>
+
+<span style="font-family:verdana;">I don't post a lot unfortunately, the reason is that I dont really have time to play with some interesting stuff to post about it later :( But fortunataly I found some time for creating <a href="http://labs.mozilla.com/projects/ubiquity/">ubiquity</a> command</span>.
+
+<span style="font-family:verdana;">I have to work a lot with </span><a href="http://www.atlassian.com/software/jira/">JIRA</a><span style="font-family:verdana;"> & </span><a href="http://www.atlassian.com/software/crucible/">Crucible</a><span style="font-family:verdana;"> on <a href="http://www.tomtom.com/home/">my current</a> job. So I decided to simplify this process somehow :)</span>
+
+<span style="font-family:verdana;">I was thinking about this already for a long time... I also wanted to cheack out Ubiquity from the development side, so I decided to give it a try. I followed quite nice <a href="https://wiki.mozilla.org/Labs/Ubiquity/Ubiquity_0.1_Author_Tutorial#The_Ubiquity_0.1_Command_Tutorial">tutorial</a>, to be honest I was amazed to see such a complete one. Ususally it's comletely differnet when dealing with mozilla.</span>
+
+Result seems to be quite nice at least it is what I was targeting to you can give it a try if you are also dealing with jira or crucible. Actually there are some other Ubiquity command related to the JIRA but they seem to be site specific and settings are hardcoded. In with this command you can set your jira / crucible URL and enjoy it.

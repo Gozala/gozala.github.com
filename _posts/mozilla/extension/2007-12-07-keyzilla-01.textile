@@ -1,0 +1,16 @@
+---
+layout: post
+title: KeyZilla 0.1
+tags: mozilla extension
+---
+
+<a href="http://bp0.blogger.com/_HPi35bf7O9Q/R1ms1LHVjiI/AAAAAAAAA0s/3Gs-oGYZEn0/s1600-h/logo128.png"><img style="float:left;cursor:pointer;margin:0 10px 10px 0;" src="http://bp0.blogger.com/_HPi35bf7O9Q/R1ms1LHVjiI/AAAAAAAAA0s/3Gs-oGYZEn0/s320/logo128.png" alt="" border="0" /></a>                     <span style="font-family:verdana;color:rgb(0,153,0);font-weight:bold;font-size:180%;">KeyZilla 0.1</span>
+
+<span style="font-family:verdana;">There some problems with Mozilla XUL based applications on Linux with non English keyboard layout This extension is to fix such kind of bugs, which makes applications not comfortable to use. For example ctr+C ctrl+V ctrl+T There are some bug reports about this:</span>
+
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=407356">https://bugzilla.mozilla.org/show_bug.cgi?id=407356 </a><a href="http://bugzilla.songbirdnest.com/show_bug.cgi?id=6189">http://bugzilla.songbirdnest.com/show_bug.cgi?id=6189</a> <a href="http://bugs.activestate.com/show_bug.cgi?id=73755">http://bugs.activestate.com/show_bug.cgi?id=73755</a>
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=69230">https://bugzilla.mozilla.org/show_bug.cgi?id=69230</a>
+
+<span style="font-family:verdana;">you can fix all this with this little extension It works with FireFox, ThunderBird, SongBird, Open Komodo For the future I'm going to make it flexible for fix bug on any language, and make hot key reassigner. For to change add more hot key :) Hope Mozilla will fix their bug soon & my extension will be useless</span>
+
+               <span style="font-family:verdana;">Latest Version</span>: <a href="https://addons.mozilla.org/en-US/firefox/developers/editversion/38359">0.1.0</a>

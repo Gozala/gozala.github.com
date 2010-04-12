@@ -1,0 +1,18 @@
+---
+layout: post
+title: Mozshell
+tags: xulrunner komodo extension
+---
+
+<span style="font-family:verdana;">In this post I am going to write about one of my projects, which I presented at FOSDEM, during Mozilla lightning talks. Unfortunately I had not enough time to give a good idea what what is <a href="http://code.google.com/p/mozshell/"><span style="font-weight:bold;">MozShell</span></a> and what potential it has...</span>
+
+<span style="font-family:verdana;">For several years already, I'm working with XUL and JavaScript in differnt companies and different applications. I think every extension / xulrunner developers will agree that there are no reliable tools for our hard job, what makes development process slower and more complicated. Well there are tools like Venkman and Chrome bug, but if you can can make them work on Firefox, you will never manage to make them work properly on other third party XULRunner based applications. Even if you will it's quite different from having well integrated tool into your primary editor. So that's how I got inspired to write </span><span style="font-family:verdana;">an extension for <a href="http://www.openkomodo.com/">Komodo Edit</a> which add's JavaScript shell and Object inspector to the editor. It is not just another js shell among hundreds of others. It is quite unique with its architecture and really interesting features. MozShell is focused on xulrunner / extension developers, it gives ability to create remote connections to _(any xulrunner based)_ applications, no meter if they are running on the local machine, or different remote, or even virtual machines. You can evaluate JavaScript </span><span style="font-family:verdana;">during run-time</span><span style="font-family:verdana;">, Inspect Objects, etc..  Because of the name some people might confused, integration with an editor makes it completely different from what we call shell but at the same time experimental interface makes it much easier and fast to use.</span>
+<div class="separator" style="clear:both;text-align:center;"><a href="http://1.bp.blogspot.com/_HPi35bf7O9Q/SZCuUuDcIBI/AAAAAAAADIQ/g84zuPonCnY/s1600-h/screen4.png"><img src="http://1.bp.blogspot.com/_HPi35bf7O9Q/SZCuUuDcIBI/AAAAAAAADIQ/g84zuPonCnY/s400/screen4.png" border="0" alt="" /></a></div>
+<span style="font-family:verdana;">
+</span>
+<span style="font-family:verdana;">Extension is still on the very early stage of development but still you can gibe it a try and give some feedback!!</span>
+
+<span style="font-family:verdana;">Project of caurse is an open source and can be found <a href="http://code.google.com/p/mozshell/">here.</a> </span>
+
+<span style="font-family:verdana;">
+</span>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>{{ page.title }}</title>
+        <link type="text/css" rel="stylesheet" href="/resources/css/style.css"/>
+        <script type="text/javascript" src="../require-js/lib/require.js"></script>
+    </head>
+    <body>
+        <div class="ribbon">
+            <a target="_blank" href="https://github.com/Gozala/taskhub">Fork me on GitHub</a>
+        </div>
+        <ul>
+        {% for post in site.posts %}
+            {% if post.title == page.title %}
+            <li id="post">
+                <header class="bookmark">{{ page.title }}</header>
+                <article>
+                    {{ content }}
+                </article>
+                <footer>
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                      /**
+                        * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+                        */
+                      (function() {
+                       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                       dsq.src = 'http://gozala.disqus.com/embed.js';
+                       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                      })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=gozala">comments powered by Disqus.</a></noscript>
+                </footer>
+            </li>
+            {% endif %}
+            {% if post.title != page.title %}
+            <li>
+                <a class="bookmark {{ post.tags }}" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
+            </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </body>
+</html>

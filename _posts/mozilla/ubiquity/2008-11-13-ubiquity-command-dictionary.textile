@@ -1,0 +1,62 @@
+---
+layout: post
+title: ubiquity command dictionary
+tags: ubiquity
+---
+
+
+
+<span style="font-family:verdana;">Another nice command for ubiquity !!!</span>
+
+
+
+<span style="font-family:verdana;">Well the verb = command is called dictionary and it can handle selection or just typed text and will translate it to </span><span style="font-family:verdana;">languge specified from the language specified. Well almost the vay like built in translate command works. You can ask then why do we need another one ??</span>
+
+
+
+<span style="font-family:verdana;">Well the thing is that google translate is pretty nice with translation of the text, while it sucks if you want to translation just a one word. You will fill it even more if the word is technical or scientific one. In that case ordinary dictionaries are mutch better llike lingvo stardict etc.. they also suggest several options again unlilke google. At least my sweet angel was having this problem so I decided to make this verb for her.</span>
+
+
+
+<span style="font-family:verdana;">The second reason is as I am a Georgian and google tarnslate  not (hopefully yet) support that languge it makes sence to me, to have a georgian > english, english > georgian dictionaries. Theres really nice georgian web resource </span><a href="http://www.translate.ge/">translate.ge</a><span style="font-family:verdana;"> which is a online dictionary with nice API.</span>
+
+
+
+<span style="font-family:verdana;">Because of all this reasons I decided to create this verb. Unfortunataly API of </span><a href="http://www.translate.ge/">http://www.translate.ge</a><span style="font-family:verdana;"> and </span><a href="http://www.lingvo.com/">http://www.lingvo.com/</a><span style="font-family:verdana;">. So I had to use different approach acording to the languge text to be translated from and translated to... Even worth while having nice API on the Georgian resource wheer results ar returned as an html containing only the actual translation second site opens a new page with bunch of stuff to be parsed :(</span>
+
+
+
+<span style="font-family:verdana;">Anyway command is ready for use. There are still some minor issues related to the second page because of API and there also something I'm going to improve in the future. But still current version is quite stabil and does its work so give it a try and post back a feeback</span>
+
+
+
+<span style="font-weight:bold;font-family:verdana;">Some Tips</span>
+
+
+
+<span style="font-family:verdana;">By the default verb translates from english to georgian, but it's possible to change this behavior and set default for example french to russian. If you want to do so you need to type in the address bar of your firefox "about:config" after warning message you should see a sort of grid. That's your firefox preferances. what we whant to do to add two new preferances for defaults of our ubiquity command. to do so hust right click and choose New > String in the popup</span>
+
+
+
+<span style="font-family:verdana;">and then add </span>
+
+
+
+<span style="font-family:verdana;">Preferance name : ubiquity.commands.Dictionary.from</span>
+
+<span style="font-family:verdana;">value : (can be any from )  georgian, english, russian, german, french, italian, spanish</span>
+
+
+
+<span style="font-family:verdana;">and then teh same </span>
+
+
+
+<span style="font-family:verdana;">Preferance name : ubiquity.commands.Dictionary. to</span>
+
+<span style="font-family:verdana;"> value : (can be any from )  georgian, english, russian, german, french, italian, spanish</span>
+
+ 
+
+<span style="font-family:verdana;">P.S.: take in mind that currently you can translate from georgian to english as the other way round and from russian to any from the above or otherway rounf from any of above to russian</span>
+
