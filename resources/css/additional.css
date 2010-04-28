@@ -1,0 +1,111 @@
+#add {
+    position: absolute;
+    top: 30px;
+    right: 0.6em;
+    font-size: 1em;
+    font-family: monaco;
+    display: inline-block;
+    color: rgba(89, 75, 66, 1);
+    text-decoration: none;
+    background: rgba(89, 75, 66, 0.5);
+    border: 0.1em rgba(89, 75, 66, 0.6) solid;
+    padding: 0 0.4em;
+    text-align: conter;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+
+#login-data {
+    font-size: 28px;
+    width: 85%;
+    outline: none;
+    border: none;
+    background: none;
+}
+#login {
+    position: absolute;
+    left 0px;
+    height: 2em;
+    background: url(../images/octocat.png) no-repeat 0 6px;
+    padding-left: 90px;
+    padding-bottom: 2px;
+}
+
+
+#tasks-view {
+    min-width: 50%;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    left: -10px;
+    top: 2px;
+}
+ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li {
+    display: block;
+    text-shadow: rgba(0, 0, 0, 1) 0px 1px 1px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(89, 75, 66, 0.9);
+    background: rgba(52, 46, 46, 0.8);
+    padding: 10px 50px 10px 20px;
+    margin: 5px 20px 5px 5px;
+}
+li:nth-child(2n+1) {
+    background: rgba(89, 75, 66, 0.8);
+}
+li:hover {
+    background: rgba(52, 46, 46, 0.8);
+}
+
+li:first-child {
+    margin-right: 5px !important;
+    padding-right: 150px;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px;
+    font-weight: bold;
+    background: rgb(184, 211, 11);
+    color: #000;
+    margin-bottom: 10px;
+}
+li[contenteditable=true] {
+    background: rgba(106,100,74, 0.9);
+    margin-right: 28px;
+}
+li:first-child[contenteditable=true] {
+    background: #D17100;
+}
+
+#settings {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    z-index: 1;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    opacity: 0.5;
+}
+#settings:before {
+    content: url(../images/settings.png);
+}
+
+#settings:hover {
+    opacity: 0.7;
+}
+#settings:active {
+    opacity: 0.8;
+}

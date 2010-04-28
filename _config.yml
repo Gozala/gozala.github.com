@@ -1,0 +1,17 @@
+#markdown: rdiscount
+# pygments: true
+# permalink: /:categories/:title/
+paginate: 5
+
+exclude:
+    - README.md
+
+title: Irakli Gozalishvili
+url: http://www.jeditoolkit.com
+feed: /atom.xml
+description: "?."
+
+author:
+    name: Irakli Gozalishvili
+    email: rfobic@gmail.com
+    twitter: gozala

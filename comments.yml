@@ -1,0 +1,469 @@
+--- !ruby/object:Comment 
+author_email: ""
+author_name: ThomasMcNister
+author_url: ""
+content: "Hi,<br/>when I try to install the .deb file it says<br/><br/>error: conflicts with the installed package 'picasa'"
+created_at: 2008-11-03 10:26:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/09/28/picasa-photo-viewer-linux-port/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Reivajss
+author_url: ""
+content: "hi... i saw the image.. its looks great!<br/>i have ubuntu 8.10<br/><br/>and it says..<br/>error: conflicts with the installed package 'picasa'<br/><br/>can u help me plz? i really want to use this program"
+created_at: 2008-11-06 20:05:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/09/28/picasa-photo-viewer-linux-port/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: R-Fobic
+author_url: ""
+content: I made a new version for you guys :)<br/>http://rfobic.blogspot.com/2008/11/picasa-photo-viewer-linux-port-updated.html
+created_at: 2008-11-07 14:43:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/09/28/picasa-photo-viewer-linux-port/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Reivajss
+author_url: ""
+content: THANKS it works!<br/>but if someboy want to use PicasaPhotoViewer as a default program.. it needs to set manualy.. <br/><br/>in my case.. right click to a JPEG image, then go to propieties.  in the propieties windows go to the "OPEN WITH" tab... and select "PicasaPhotoViewer"... if u dont find the program there.. then press the "+ADD" button, then go to 'use a personalizated command' and type "PicasaPhotoViewer".<br/><br/>I have ubuntu in spanish (i speak spanish).. maybe some instructions are diferent.<br/><br/>Thanks again.. i love Photo Viewer xD
+created_at: 2008-11-07 19:00:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Patey North
+author_url: ""
+content: Hi.<br/><br/>Your Rapidshare link is down... it only supported 10 downloads, apparently.  Do you have another mirror available for the file?<br/><br/>Thanks, it looks like you've done a great job!  Have you shared your work with the Picasa for Linux developers?<br/><br/>-Mark
+created_at: 2008-11-13 20:01:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: R-Fobic
+author_url: ""
+content: "Right! Unfortunately I did not found the way to set application as default for image viewing (at least simple way :). Here is the new link<br/><br/>http://rapidshare.de/files/40902938/PicasaPhotoViewer-1.0.2.deb.html<br/><br/>Thanks for interest.<br/>P.S.: I did not contributed back to Google, I don't think there's anything special. But it might sense to do that.."
+created_at: 2008-11-13 21:34:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Patey North
+author_url: ""
+content: Awesome, thanks so much!!!<br/><br/>If you'd like to share your work with even more people, try here:<br/><br/>http://groups.google.com/group/Google-Labs-Picasa-for-Linux?pli=1<br/><br/>A few Picasa for Linux developers are quite active there, and may be interested in what you've accomplished.
+created_at: 2008-11-13 21:45:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Patey North
+author_url: ""
+content: "P.S.:  If you don't like rapidshare's weird restrictions, try filedropper.com.  They have a paid plan, but their free service is extremely reliable too, and is free from silly 60-second countdowns.  :-)"
+created_at: 2008-11-13 21:55:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Reivajss
+author_url: ""
+content: i agree... u should share your work.. y search everywhere.. and i only foud this here... <br/><br/>everybody want and easy .deb to install.<br/><br/>thanks again..
+created_at: 2008-11-13 22:03:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: R-Fobic
+author_url: ""
+content: done<br/><br/><a HREF="http://groups.google.com/group/Google-Labs-Picasa-for-Linux/browse_thread/thread/b43ac6ff93f14808" REL="nofollow">Post on google groups</a><br/><br/><a HREF="http://www.filedropper.com/picasaphotoviewer-102_1" REL="nofollow">link to file on filedropper</a><br/><br/>Thanks for comments and interest
+created_at: 2008-11-13 23:01:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Shyam Reddy
+author_url: ""
+content: Excellent R-Fobic! Thankyou for your time and efforts. It works great!
+created_at: 2008-11-15 11:38:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Uday Kumar Adusumilli
+author_url: ""
+content: hi.. very nice work. can you please reupload the installation file as the rapidshare link is no longer working.. thanks in advance..
+created_at: 2008-11-17 17:44:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: R-Fobic
+author_url: ""
+content: Finally I got read of this rapidshare and other file sharing services. I guess now there will be no problem downloading the file. link to the file is updated in the post
+created_at: 2008-11-18 01:01:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: jolish
+author_url: ""
+content: Thankyooouuu!!!!!!!!<br/>I really like PicasaPhotoViewer, and now I have it on my lap thanks to you.<br/><br/>This is what I love about OpenSource!!!<br/>Great Job!
+created_at: 2008-11-19 20:56:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Uday Kumar Adusumilli
+author_url: ""
+content: many many thanks for the updated links.
+created_at: 2008-11-19 22:13:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Mond Zhu
+author_url: ""
+content: Thank you very much. It works on my system. By the way, my system is Debian/sid.However, after PicasaPhotoViewer is closed, xulrunner-stub is still running using about 15% cpu.It's not normal, I am sure. But  I don't know whether it is related or not. <br/><br/>Thank you again for your great work.
+created_at: 2008-12-26 06:54:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Mond Zhu
+author_url: ""
+content: One update.The problem I mentioned in last post is not related to your work.So, never mind.
+created_at: 2008-12-26 07:37:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Joey Alexithymia
+author_url: ""
+content: i'm gutted! I love the Picasa Photo Viewer and have it set as default on Vista and Windows 7, but alas it won't work for me on Ubuntu :( <br/><br/>i'm using x64 ibex if that makes a difference but whenever i try to launch a photo with it i get nothing.
+created_at: 2009-01-05 18:00:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Emmanuel
+author_url: ""
+content: thank you much for this! it works great!finally i have a cool photo viewer...
+created_at: 2009-01-12 04:35:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Oman
+author_url: ""
+content: To make PicasaPhotoViewer the default program for all JPEG files for a particular user, do the following:<br/><br/>1. right click on a JPEG image, then go to properties. in the properties window go to the "OPEN WITH" tab... and select "PicasaPhotoViewer"... if u dont find the program there.. then press the "+ADD" button, then go to 'use a personalizated command' and type "PicasaPhotoViewer".<br/><br/>This creates a PicasaPhotoViewer desktop configuration file in ~/.local/share/applications/<br/><br/>2. edit ~/.local/share/applications/mimeapps.list and change the line beginning with image/jpeg, so that PicasaPhotoViewer is the first application in the list, eg:<br/><br/>image/jpeg=userapp-PicasaPhotoViewer-BL3WOU.desktop;eog.desktop;firefox.desktop;gimp.desktop;thunderbird.desktop;<br/><br/>To make Picasa Photo Viewer the default for ALL users do the following<br/><br/>1. copy the PicasaPhotoViewer desktop configuration file from ~/.local/share/applications/ to /usr/share/applications/PicasaPhotoViewer.desktop<br/><br/>2. add the following lines<br/><br/>MimeType=image/x-bmp;image/bmp;image/gif;image/x-psd;image/x-tga;image/tiff;image/jpeg;image/jpg;image/png;<br/>Icon=PicasaPhotoViewer<br/><br/>3. to tell GNOME to use this desktop configuration file for JPG mime types type the following at the terminal:<br/><br/>xdg-mime default PicasaPhotoViewer.desktop image/jpeg<br/>xdg-mime default PicasaPhotoViewer.desktop image/jpg
+created_at: 2009-02-08 03:40:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: boss@caiacoa.de
+author_name: caiacoa
+author_url: ""
+content: |-
+  Since I can confirm this problems for Ubuntu 8.10 and 9.04 (32-bit, german) described by starlex and Joey-Elijah:
+  
+  I have created a special Picasa Photo Viewer for Ubuntu package based on this one from Irakli Gozalishvili.
+  
+  You can find it here:
+  http://www.caiacoa.de/wiki/index.php/Picasa_Photo_Viewer_(Linux_port)_for_Ubuntu
+  
+  And many thanks to Irakli again. Great work!
+  
+  -caiacoa
+created_at: 2009-06-17 15:26:56 +02:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: joeysneddon@hotmail.co.uk
+author_name: Joey-Elijah
+author_url: http://d0od.co.uk
+content: |-
+  I, too, get the following error when i try to run it: -
+  
+  run-detectors: unable to find an interpreter for
+  /opt/google/picasa/3.0/wine/drive_c/Program
+  Files/Google/Picasa3/PicasaPhotoViewer.exe
+  
+  Also using Jaunty. I so want to use this!
+created_at: 2009-04-24 06:17:13 +02:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: starlex@email.it
+author_name: starlex
+author_url: ""
+content: |-
+  Hi,
+  in my ubuntu installation it is not working. I tried launching it from the terminal and I get the following error message:
+  "run-detectors: unable to find an interpreter for
+  /opt/google/picasa/3.0/wine/drive_c/Program
+  Files/Google/Picasa3/PicasaPhotoViewer.exe"
+  
+  This is quite strange, as Picasa 3 itself works properly (so, the wine wrapper is ok).
+  
+  I am using Ubuntu 9.04 alpha 6, but I am pretty sure this is not an alpha-related issue, as another guy posted about the same problem on the ubuntu forum a few weeks ago.
+  
+  Could you please help me?
+  
+  Thanks a lot,
+  Alex.
+created_at: 2009-03-13 23:19:01 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: rfobic@gmail.com
+author_name: gozala
+author_url: http://
+content: You can try to run the app from command line then send be an output I believe there should be something useful. So I might be able to help.
+created_at: 2009-03-21 00:01:43 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: "Picasa Photo Viewer \xD0\xB2 Linux. | My Way"
+author_url: http://u-budarova.ru/?p=671
+content: !binary |
+  Wy4uLl0g0LXRgdGC0YwuINCS0L7RgiDQsiDRjdGC0L7QvCDQsdC70L7Qs9C1
+  INC+0L/QuNGB0LDQvdC+LCDQutCw0Log0L7QvdC+INGA0LDQsdC+0YLQsNC1
+  0YIgcmZvYmljLndvcmRwcmVzcy5jb20sINCwINCy0L7RgiDQv9GA0Y/QvNCw
+  0Y8g0YHRgdGL0LvQutCwINC90LAg0L3Rg9C20L3Ri9C5IGRlYiDQv9Cw0LrQ
+  tdGCIFBpY2FzYVBob3RvVmlld2VyLiBbLi4uXSA=
+
+created_at: 2009-05-19 20:13:23 +02:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: zephyrro@yahoo.com
+author_name: Ferry
+author_url: ""
+content: |-
+  change this line:
+  $wineWrapper "$PicasaPhotoViewer" "$imageWinePath"
+  
+  to:
+  $WineWrapper "$PicasaPhotoViewer" "$imageWinePath"
+  
+  Linux shell is case sensitive. I fix the script by replacing $wineWrapper with $WineWrapper (from w to W)
+created_at: 2009-05-12 07:23:46 +02:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: john@giosico.com
+author_name: John
+author_url: ""
+content: |-
+  I am having a problem in Ubuntu 9.04 with Picasa Photo Viewer where you click or right click to grab the photo to move it around but it is impossible to drop the photo.  So the mouse is fixed holding the image.  I can not click another application or alt-tab.  Or force click.  My only option is to hold down the power button to shutdown.
+  
+  Is anyone else experiencing this?
+  Can anyone provide any troubleshooting advice?
+  
+  Thank you.
+created_at: 2009-09-08 12:10:16 +02:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: fan@style64.ru
+author_name: iRoller
+author_url: http://iroller.ru
+content: |-
+  Hi
+  Thanks for your blog. Could you please send me via email  PicasaPhotoViewer-1.0.2.deb? All links are dead :(
+created_at: 2009-11-08 21:22:55 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: fan@style64.ru
+author_name: iRoller
+author_url: http://iroller.ru
+content: Ah, sorry, I found it from previous comment :)
+created_at: 2009-11-08 21:24:27 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Instalar Google Picasa Photo Viewer ? Soft-Libre
+author_url: http://elsoftwarelibre.wordpress.com/2009/12/01/instalar-google-picasa-photo-viewer/
+content: "[...] no se encuentra disponible en la versi\xC3\xB3n de Picasa para plataformas Linux. Pero gracias a\xC2\xA0Irakli Gozalishvili y a Caiacoa, podemos instalar en Ubuntu mediante un simple [...] "
+created_at: 2009-12-01 05:38:00 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Get Picassa Image Viewer In Linux | AndroidTux
+author_url: http://www.androidtux.co.cc/posts/get-picassa-image-viewer-in-linux/
+content: "[...] OS, you can use alien to convert the .deb into a .rpm. Ok, so the creator of this binary is called Irakli Gozalishvili, he made the \xE2\x80\x9Cport\xE2\x80\x9D of picasa image viewer to linux. In order to have picasa image [...] "
+created_at: 2009-12-02 18:44:08 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Google Softwares | Linux | Open Thoughts
+author_url: http://openthoughts.me/blog/2009/12/15/google-softwares-linux/
+content: "[...] these, especially Picasa Photo Viewer on Linux. Thanks to OMGUbuntu, for this. Many a thanks to Irakli Gozalishvili and Caiacoa to have made it [...] "
+created_at: 2009-12-14 21:09:02 +01:00
+post_url: http://rfobic.wordpress.com/2008/11/07/picasa-photo-viewer-linux-port-updated/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: richard Mao
+author_url: ""
+content: This is a great command and I love it !!!
+created_at: 2009-02-01 19:22:00 +01:00
+post_url: http://rfobic.wordpress.com/2009/01/19/ubiquity-command-say/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Edwin Khodabakchian
+author_url: ""
+content: Great detailed post!
+created_at: 2009-02-18 00:10:00 +01:00
+post_url: http://rfobic.wordpress.com/2009/02/17/some-mock-up-around-ubiquity/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Blair McBride
+author_url: ""
+content: "Some great thoughts on Ubiquity here!<br/><br/>Here are some un-organised thoughts I had while reading this:<br/><br/>* I agree the hyphenated command names are horrible to use. Thankfully, command names with spaces will come one day. Also, Jono has a proposal on \"overlord verbs\" here: http://jonoscript.wordpress.com/2009/01/24/overlord-verbs-a-proposal/<br/><br/>* I'm undecided whether it would be a good thing to have modifiers that appear based on the presence of other modifiers. On one hand, its a big leap in complexity when using it. However, to a certain extent, sentance complexity is expected. I think its a matter of balancing those expectations. <br/><br/>* The diferrence between required and optional modifiers is potentially a big problem. For instance, what should happen if the user doesn't fill out a required modifier? I think from an interaction point of view, its far better to have all modifiers be optional. Ubiquity and the command should figure out to do regardless of whether a modifier has been filled in by the user.<br/><br/>* The difference between \"bug 123\" and \"#123\" and \"123\" is negligible. Given the context, they all mean the same thing, and should therefore be treated like they're the same.  As such, it should be the noun type that parses \"bug 123\" into \"123\", not Ubiquity."
+created_at: 2009-02-18 01:44:00 +01:00
+post_url: http://rfobic.wordpress.com/2009/02/17/some-mock-up-around-ubiquity/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: Max Kanat-Alexander
+author_url: ""
+content: Wow, very cool. If you need any enhancements to Bugzilla's XML-RPC interface to make this work, just let us know. :-)<br/><br/>-Max
+created_at: 2009-02-18 01:52:00 +01:00
+post_url: http://rfobic.wordpress.com/2009/02/17/some-mock-up-around-ubiquity/
+
+--- !ruby/object:Comment 
+author_email: nomangos-general@yahoo.com
+author_name: Mangoless
+author_url: ""
+content: Installed and was able to add a connection, but not able to look up bugs,  any advice?
+created_at: 2009-04-13 18:38:27 +02:00
+post_url: http://rfobic.wordpress.com/2009/03/26/adjectives-ubiquity-bugzilla-love/
+
+--- !ruby/object:Comment 
+author_email: mkanat@bugzilla.org
+author_name: Max Kanat-Alexander
+author_url: http://www.codesimplicity.com/
+content: |-
+  Hey hey. Happy to help. I'm mkanat at bugzilla dot org or just find me as "mkanat" on irc.mozilla.org (in #mozwebtools).
+  
+  -Max
+created_at: 2009-04-19 14:42:05 +02:00
+post_url: http://rfobic.wordpress.com/2009/03/26/adjectives-ubiquity-bugzilla-love/
+
+--- !ruby/object:Comment 
+author_email: moniava.g@gmail.com
+author_name: giorgi
+author_url: ""
+content: irakli rogor xar:) ak mosaceri ar aris, mara sheni meili ver vnaxe versad, holandiashi var mec, shemexmiane, :)) -- ak mets agar davcer.
+created_at: 2009-04-20 15:19:20 +02:00
+post_url: http://rfobic.wordpress.com/2009/03/26/adjectives-ubiquity-bugzilla-love/
+
+--- !ruby/object:Comment 
+author_email: guy.pyrzak@gmail.com
+author_name: Pyrzak
+author_url: http://guy-pyrzak.blogspot.com
+content: |-
+  I'm thinking of taking this idea further with the new JSON RPC services. I work with max so I'll make sure he checks out your posting.
+  
+  Let me know if we can work together on this project.
+created_at: 2009-04-20 22:51:16 +02:00
+post_url: http://rfobic.wordpress.com/2009/03/26/adjectives-ubiquity-bugzilla-love/
+
+--- !ruby/object:Comment 
+author_email: rfobic@gmail.com
+author_name: gozala
+author_url: http://
+content: Thank's Irbabe!! Fixed
+created_at: 2009-06-02 13:14:32 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/21/bespin-to-helma/
+
+--- !ruby/object:Comment 
+author_email: public@lrbabe.com
+author_name: lrbabe
+author_url: http://www.lrbabe.com
+content: The link to helma-NG sends me to bespin.mozilla.com
+created_at: 2009-06-02 11:17:12 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/21/bespin-to-helma/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: "Bespin Community Update: Jetpacks, Pie, Command Lines, and a Wave | about ICT"
+author_url: http://www.aboutict.nl/2009/06/01/bespin-community-update-jetpacks-pie-command-lines-and-a-wave/
+content: "[...] Bespin to Helma talks about a server side JavaScript back end [...] "
+created_at: 2009-06-01 23:36:05 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/21/bespin-to-helma/
+
+--- !ruby/object:Comment 
+author_email: abimanyuraja@gmail.com
+author_name: abi
+author_url: http://abcdefu.wordpress.com/
+content: This is really cool stuff, porting Bespin to JS. I'm terribly busy but I'll try to find time to help out where I can.
+created_at: 2009-04-24 18:28:59 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/21/bespin-to-helma/
+
+--- !ruby/object:Comment 
+author_email: ""
+author_name: "Mozilla Labs ? Blog Archive ? Bespin Community Update: Jetpacks, Pie, Command Lines, and a Wave"
+author_url: https://labs.mozilla.com/2009/06/bespin-community-update-jetpacks-pie-command-lines-and-a-wave/
+content: "[...] Bespin to Helma talks about a server side JavaScript back end [...] "
+created_at: 2009-06-01 19:02:06 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/21/bespin-to-helma/
+
+--- !ruby/object:Comment 
+author_email: bard@hyperstruct.net
+author_name: bard
+author_url: http://hyperstruct.net
+content: I'm playing a little with helma-ng, too.  How did you integrate seethrough? Did you subclass the Response object?
+created_at: 2009-05-30 11:58:26 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/21/google-app-engine-helma-geekcloud/
+
+--- !ruby/object:Comment 
+author_email: zach@carter.name
+author_name: Zach Carter
+author_url: http://zaa.ch
+content: |-
+  Kevin Dangoor of Mozilla labs talked about a port of Bespin's backend to JavaScript, you should get in touch with him about that. I don't see any files on the bespin repo yet, so I'm not sure if he's started.
+  
+  I had previous done some work to get Jack to run on XPCOM, but that was before it split into Narwhal. I'll probably start on a new Narwhal branch implementing the serverjs spec in XPCOM, let me know if you want to collab or already started.
+  
+  Your bespin idea is cool. I was thinking of packaging web apps running on Jack inside XULRunner. XPCOM is probably the most widely deployed serverjs capable environment already in use, being in Firefox, the possibilities are great.
+created_at: 2009-05-25 03:57:30 +02:00
+post_url: http://rfobic.wordpress.com/2009/04/22/bespin-chromend/
+
+--- !ruby/object:Comment 
+author_email: cfacebal@gmail.com
+author_name: "C\xC3\xA9sar Acebal"
+author_url: http://cesaracebal.com
+content: |-
+  It seems very, very interesting. I'm currently considering which documentation tool to use for JavaScript and I'm quite frustrated: either they are very inflexible or not work at all when you start to do some 'complicated' things such as self-invocation anonymous functions, nested scopes and that sort of things.
+  
+  I've reached this page while looking for Rhino, source comments and similar keywords, since I think that the Rhino option is the only one available if we want the tool support any JavaScript construction, no matters how strange it be.
+  
+  I'll have a look at it, sure. Thank you very much for your efforts!
+  
+  By the way, couldn't it be possible make it even more flexible and allowing any documentation format (not just jsdoc). If you have done the tough work of extracting the comments from the source with the appropriate scope, it could be done delegating to some Formatter object. That will allow to use jsdoc but also, for example, restructured text to be passed to Sphinx or similar tools. It's just an idea.
+  
+  Thank you again!
+created_at: 2009-06-27 18:03:35 +02:00
+post_url: http://rfobic.wordpress.com/2009/06/10/jsdocs/
+
+--- !ruby/object:Comment 
+author_email: rfobic@gmail.com
+author_name: gozala
+author_url: http://
+content: "Hi C\xC3\xA9sar,\r\n\
+  \r\n\
+  Thanks for your comment. At this point my tool is not that much flexible as well, but I'm definitely moving that direction. Currently in experimental branch I have some work done on rhino AST but it's not used by the tool yet. Feel free to fork me!!\r\n\
+  http://github.com/Gozala/jsdocs/tree/experimental\r\n\
+  \r\n\
+  Yes having flexible comment parser is something I would like to have as well, I was thinking to make comments parser / extractor being a plugin, that way it could be possible to write a different plugin which will process comments in a different manner."
+created_at: 2009-06-29 09:32:15 +02:00
+post_url: http://rfobic.wordpress.com/2009/06/10/jsdocs/
+
