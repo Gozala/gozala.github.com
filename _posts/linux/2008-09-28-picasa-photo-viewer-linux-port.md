@@ -4,35 +4,70 @@ title: Picasa Photo Viewer (Linux port)
 tags: linux
 ---
 
-<span style="font-weight:bold;font-family:verdana;">Update
-
-This post is out of date, if interested please <a href="http://rfobic.blogspot.com/2008/11/picasa-photo-viewer-linux-port-updated.html">look here</a>
-
-Picasa Photo Viewer</span><span style="font-family:verdana;"> is a nice peace of software powered by Google.
-It's included as a part of Picasa 3 (Beta). Public beta was announced few days ago but unfortunately it's only for the windows users. Well if you wonder whats new in this version here is a video by google about the new fea</span><span style="font-family:verdana;">tures.
+[Picasa Photo Viewer] is a nice software from Google and it is included as
+a part of [Picasa 3 (Beta)][Picasa]. Public beta was announced few days
+ago but unfortunately it's only for the windows users. If you wonder whats
+new in this version here is a video by google about the new features.
 
 
+<object width="640" height="385">
+	<param name="movie" value="http://www.youtube.com/v/rskC6c_5L1M&color1=0xb1b1b1&color2=0xd0d0d0&hl=en_US&feature=player_embedded&fs=1"></param>
+	<param name="allowFullScreen" value="true">	</param>
+	<param name="allowScriptAccess" value="always"></param>
+	<embed src="http://www.youtube.com/v/rskC6c_5L1M&color1=0xb1b1b1&color2=0xd0d0d0&hl=en_US&feature=player_embedded&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="385"></embed>
+</object>
 
-Only thing that is missing in this video is new app included with Picasa called Picasa Photo Viewer. it can be set as default image viewer app in windows and since then all the images will be opened in a really nice & fast app, without starting Picasa or big loading process great interface and etc. (That's what I was missing for really long time since I moved to Linux. Picasa was great but I had to import images to library an only then I could open and .... )
 
-As I really hate <span style="font-weight:bold;">eye of gnome</span> default photo viewer in Gnome, and I pretty much don't like the rest available in Linux, they</span><span style="font-family:verdana;"> are slow or ugly. So I decided to make a port of Picasa photo viewer to Linux. Maybe some of you knew that Linux version of picasa is in reality is package including wine and bit modified version of windows version of picasa. I decided to use the same technics to port it to Linux. only thing I had to do is to make some script which will convert file path from Linux to the path in wine. Basically that's it just few more tricks with wine profiling and deb packaging. Package is working fine tested on several machines running ubuntu (7.10 ~ 8.10 alfa). After install in the application/graphics you'll find Picasa Photo Viewer. Unfortunately you need few</span><span style="font-family:verdana;"> more manual steps to make it default image viewer app. You need to associate image mime types with this app. easiest way to do it select in nautilus any picture right click > open with > open with other application > Use custom command > PicasaPhotoViewer
+Only thing that is missing in this video is new application included with
+[Picasa] called / [Picasa Photo Viewer]. it can be set as default image
+viewer application in windows and after all images will be opened in a
+nice & fast tool, without starting Picasa and long loading process + great
+interface etc. That's something I was missing for a long time, since I
+moved to Linux. [Picasa] is great but it's a photo manager not a viewer
+and importing images to library and only after accessing them is not for
+me.
 
-P.S.: You have to associate it with all picture mime type's you need to use like *.jpg, *.png, *.raw ... (After first time adding a custom command it also should be available in the list of open with apps)
+As I really hate [Eye of Gnome], default photo viewer of [Gnome], and pretty 
+much all the other available photo viewers on linux, since I think they are 
+slow and ugly. So I've decided to make a hacking session, and try to port of
+[Picasa photo viewer] to linux. Some of you might know, that linux version of
+[Picasa] is just package with preconfigured [Wine] and slightly modified 
+windows version of Picasa. I thought I could do the same trick to port
+[Picasa photo viewer]. Only thing I had to do was a wrapper script converting
+image path to a windows paths in a preconfigured wine. Well and few more
+tricks to configure wine and package all this as a ".deb" package. Result
+works surprisingly well on several different [Ubuntu]*(7.10 ~ 8.10 alfa)* 
+installations on different machines. After installing a package you'll find 
+it in **application ➥ graphics ➥ Picasa Photo Viewer**. Unfortunately you need
+to make few manual steps to make it default image viewer cause I have not 
+found any way to do automatically. Anyway if you want to use it by default 
+you need to associate image mime types with it and easiest way to do so is to:
 
-You can download deb package form the link below, it reqires wine >= 1.0
-If you're wine out of date look for the link >> <a href="http://www.winehq.org/site/download">Get wine
-</a>
-Enjoy!!</span>
-<span style="font-family:verdana;">
-<a href="http://rapidshare.com/files/148998748/PicasaPhotoViewer.deb.html">Get Picasa Photo Viewer</a>
+- Select any picture
+- Right click on it & select open with other application
+- Select "Use custom command"
+- type `PicasaPhotoViewer`
 
-Upload to the web album & edit with picasa won't work unfortunataly I think I'll wait for <a href="http://picasa.google.com/linux/">Linux port by Google.</a>
+P.S.: You have to associate it with all picture mime-type's you want to
+use it with *(.jpg, .png, .raw ...)* After adding a custom command once you should be able to select it from a list in the 'open with'
 
-Any way if you want to try add this functionality please comment I'll give you some tips how to do that, you can also add functionality to make it default image viewer automatically but it also requires some scripting if wonder how please ask in comments
+You can download a deb package [form here][picasa photo viewer for linux].
+It requires [wine] >= 1.0.
 
-Here how it looks like
+Enjoy!!
 
-</span><a href="http://1.bp.blogspot.com/_HPi35bf7O9Q/SN-hA4vEMGI/AAAAAAAAB_U/yOMZTw14Rys/s1600-h/Screenshot.png"><img style="float:left;cursor:pointer;margin:0 10px 10px 0;" src="http://1.bp.blogspot.com/_HPi35bf7O9Q/SN-hA4vEMGI/AAAAAAAAB_U/yOMZTw14Rys/s320/Screenshot.png" alt="" border="0" /></a>
+Upload to the web album & edit with picasa won't work unfortunately but I hope I'll motivate google to make a proper port this way. 
 
-<span style="font-family:verdana;">
-</span>
+And finally that's how it looks like:
+
+![thumbnail][preview thumbnail]![lightbox][preview lightbox]
+
+[Picasa]:http://picasa.google.com/ "Free photo editing software from Google"
+[Picasa Photo Viewer]:# "Quick image viewer shipped with Picasa"
+[Eye of Gnome]:http://projects.gnome.org/eog/ "Official image viewer for the GNOME Desktop environment"
+[Gnome]:http://www.gnome.org/ "The Free Software Desktop Project"
+[Wine]:http://www.winehq.org/ "Software that lets you run Windows applications on other operating systems"
+[Ubuntu]:http://www.ubuntu.com/ "Ubuntu is an open-source Linux based alternative to Windows"
+[picasa photo viewer for linux]:/resources/files/PicasaPhotoViewer.deb
+[preview thumbnail]:/resources/images/picasa-photo-viewer-thumbnail.jpg
+[preview lightbox]:/resources/images/picasa-photo-viewer.png
