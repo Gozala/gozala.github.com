@@ -3,16 +3,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <title>{ page.title }</title>
-        <link type="text/css" rel="stylesheet" href="resources/css/style.css"/>
-        <script type="text/javascript" src="../require-js/lib/require.js"></script>
+        <meta name="generator" content="Jekyll"/>
+        <meta name="author" content="{{ site.author.name }}"/>
+        <meta name="description" content="{{ site.description }}"/>
+        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml"/>
+        <link type="text/css" rel="stylesheet" href="/resources/css/style.css"/>
+        <title>{{ site.title }}</title>
     </head>
     <body>
         <div class="ribbon">
             <a target="_blank" href="https://github.com/Gozala/taskhub">Fork me on GitHub</a>
         </div>
         <ul>
-            {% for post in site.posts %}
+            {% for post in site.posts limit:20 %}
             <li>
                 <a class="bookmark" href="{{ post.url }}">{{ post.title }}</a>
             </li>

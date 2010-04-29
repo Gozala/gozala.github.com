@@ -1,4 +1,4 @@
 ---
 layout: post
-title: Index
+title: Jedi Toolkit - Irakli Gozalishvili
 ---
