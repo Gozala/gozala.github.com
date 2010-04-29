@@ -20,7 +20,10 @@ Ferarri. Feel free to take
 Only thing you would have to do would be an installation of extension. After 
 it's done you have to do. 
 
-<script src="http://gist.github.com/369718.js">Components.utils.import('resource://narwzilla/narwhal.js');</script>
+<script src="http://gist.github.com/369718.js"> </script>
+<noscript>
+Components.utils.import('resource://narwzilla/narwhal.js');
+</noscript>
 
 once you've done line above feel self in narwhal and enjoy the ride !!
 
