@@ -288,6 +288,7 @@ What are the advantages of this kind of architecture:
 [XML-RPC]:http://www.xmlrpc.com/spec "remote procedure call protocol using XML through HTTP"
 [bugzilla command]:http://gozala.github.com/ubiquity/commands/bugzilla/ "Ubiquity command for working with bugzilla"
 [bugzilla command source]:http://gozala.github.com/ubiquity/commands/bugzilla/
+
 [action]:#action "verb to describe what action command performs against target"
 [target]:#target "Object against which action is performed"
 [modifier]:#modifiers "Details what exactly action should perform against target"

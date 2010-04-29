@@ -48,7 +48,7 @@ a[title]:hover::after {
 time {
     color: rgba(0, 0, 0, 0.4);
     font-size: 60%;
-    text-shadow: rgba(225, 225, 225, 0.5) 0px 1px 1px;
+    text-shadow: rgba(150, 150, 150, 0.5) 1px 0px 1px;
     margin-left: 15px;
 }
 body > ul {
@@ -57,6 +57,7 @@ body > ul {
     list-style-type: none;
 }
 .bookmark {
+    position: relative;
     font-size: 130%;
     display: inline-block;
     text-decoration: none;
@@ -175,27 +176,25 @@ article a:hover {
     left: -31px;
     top: 30px;
 }
-.red,
 .extension {
-    background: #906E64;
+    background: #005242;
 }
-.pink,
+
 .bespin {
     background: #D40050;
 }
-.blue,
+
 .ubiquity {
     background: #3299CC;
 }
-.yellow,
 .commonjs {
-    background: #8A919B;
+    background: #5B6185;
 }
 .linux {
-    background: #2C2C2C;
+    background: #730000;
 }    
 .xulrunner {
-    background: #9DB271;
+    background: #EF4D28;
 }
 
 pre {
@@ -209,18 +208,6 @@ pre:nth-line(1n):before {
     content: counter(section);
 
 }
-
-.str { color: #080; }
-.kwd { color: #008; }
-.com { color: #800; }
-.typ { color: #606; }
-.lit { color: #066; }
-.pun { color: #660; }
-.pln { color: #000; }
-.tag { color: #008; }
-.atn { color: #606; }
-.atv { color: #080; }
-.dec { color: #606; }
 
 @media print {
   .str { color: #060; }
