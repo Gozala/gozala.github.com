@@ -6,6 +6,7 @@
         <meta name="generator" content="Jekyll"/>
         <meta name="author" content="{{ site.author.name }}"/>
         <meta name="description" content="{{ site.description }}"/>
+        <base target="_blank"/>
         <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml"/>
         <link type="text/css" rel="stylesheet" href="/resources/css/style.css"/>
         <link type="text/css" rel="stylesheet" href="/resources/css/gist.css"/>
@@ -26,7 +27,6 @@
                 </article>
                 <footer>
                     <div id="disqus_thread"></div>
-<!--
                     <script type="text/javascript">
                       /**
                         * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
@@ -37,14 +37,13 @@
                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                       })();
                     </script>
--->
                     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=gozala">comments powered by Disqus.</a></noscript>
                 </footer>
             </li>
             {% endif %}
             {% if post.title != page.title %}
             <li>
-                <a class="bookmark {{ post.tags }}" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
+                <a class="bookmark {{ post.tags }}" target="_self" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
             </li>
             {% endif %}
         {% endfor %}
