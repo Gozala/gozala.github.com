@@ -1,8 +1,15 @@
+@font-face {
+    font-family: 'webfont';
+    src: url('../fonts/Quill_script.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     background: url(../images/bg.jpg);
     color: rgb(253, 249, 250);
-    font-size: 1em;
+
     font-family: 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+    font-family: 'webfont';
 }
 
 a {
@@ -96,7 +103,7 @@ header.bookmark {
 }
 article {
     display: block;
-    text-shadow: rgba(0, 0, 0, 0.746094) 0px 1px 1px;
+    text-shadow: rgba(100, 100, 100, 0.496094) 0px 1px 1px;
     -webkit-box-shadow: 2px 2px 4px #333;
     -moz-box-shadow: 2px 2px 4px #333;
     box-shadow: 2px 2px 4px #333;
