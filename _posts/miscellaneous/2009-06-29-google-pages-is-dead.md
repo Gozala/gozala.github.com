@@ -1,7 +1,7 @@
 ---
 layout: post
 title: google pages is dead 
-categories: [pink]
+tags: miscellaneus
 ---
 
 Well sometimes you have to face the fact that most of your links in your blog 
