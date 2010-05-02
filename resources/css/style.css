@@ -91,7 +91,7 @@ a.bookmark:active {
     color: #fff;
     background: rgb(184, 211, 11);
 }
-header.bookmark {
+header > a.bookmark {
     font-size: 200%;
     font-weight: bold;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 1px;

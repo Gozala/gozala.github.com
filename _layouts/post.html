@@ -23,7 +23,9 @@
         {% for post in site.posts %}
             {% if post.title == page.title %}
             <li id="post">
-                <header class="bookmark">{{ page.title }}</header>
+                <header>
+                    <a class="bookmark" href='/' target='_self'>{{ page.title }}</a>
+                </header>
                 <article>
                     {{ content }}
                 </article>
