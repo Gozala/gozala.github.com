@@ -7,9 +7,7 @@
 body {
     background: url(../images/bg.jpg);
     color: rgb(253, 249, 250);
-
     font-family: 'Helvetiva Neue', Helvetica, Arial, sans-serif;
-    font-family: 'webfont';
 }
 
 a {
@@ -53,6 +51,7 @@ a[title]:hover::after {
 }
 
 time {
+    font-family: 'webfont';
     color: rgba(0, 0, 0, 0.4);
     font-size: 60%;
     text-shadow: rgba(150, 150, 150, 0.5) 1px 0px 1px;
@@ -131,9 +130,22 @@ article a:hover {
     color: black;
     background: rgba(238, 208, 0, 1);
 }
-
+#disqus_thread a {
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+}
 #disqus_thread {
     color: black;
+    margin-right: 50px;
+}
+#disqus_thread h3,
+#disqus_thread p,
+#disqus_thread .dsq-request-user-info,
+#disqus_thread .dsq-options,
+#disqus_thread .dsq-thread-settings,
+#disqus_thread .dsq-comment-footer,
+#disqus_thread .dsq-comment-header-meta {
+    font-family: 'webfont';
 }
 
 .ribbon {
