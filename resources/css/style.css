@@ -149,7 +149,7 @@ article a:hover {
 }
 
 .ribbon {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     overflow: hidden;
     height: 100px;
