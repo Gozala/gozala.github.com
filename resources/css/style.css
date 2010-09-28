@@ -148,6 +148,9 @@ article a:hover {
     font-family: 'webfont';
 }
 
+#promotejs > img {
+  border: none;
+}
 .ribbon {
     position: fixed;
     z-index: 3;
