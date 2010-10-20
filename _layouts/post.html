@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="/cache.manifest">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
@@ -48,7 +48,7 @@
             {% endif %}
             {% if post.title != page.title %}
             <li>
-                <a class="bookmark {{ post.tags }}" target="_self" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
+                <a class="bookmark {{ post.tags | join( ) }}" target="_self" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
             </li>
             {% endif %}
         {% endfor %}
