@@ -8,7 +8,7 @@ resources/css/additional.css
 resources/css/gist.css
 resources/css/lightbox.css
 # Fonts
-#resources/fonts/Quill_script.ttf
+resources/fonts/Quill_script.ttf
 # Images
 resources/images/bg.jpg
 resources/images/octocat.png
