@@ -1,13 +1,11 @@
 CACHE MANIFEST
-# v1.1
+# v1.2
 # CSS
-resources/css/style.css
-resources/css/additional.css
-resources/css/gist.css
-resources/css/lightbox.css
-# Fonts
-resources/fonts/Quill_script.ttf
-# Images
-resources/images/bg.jpg
-resources/images/octocat.png
-resources/images/settings.png
+resources/
+
+NETWORK:
+http://gist.github.com
+http://static.jsconf.us
+http://gozala.disqus.com
+http://disqus.com
+http://www.google-analytics.com
