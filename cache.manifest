@@ -1,7 +1,7 @@
 CACHE MANIFEST
-# v1.2
+# v1.3
 # CSS
-resources/
+resources/*
 
 NETWORK:
 http://gist.github.com
