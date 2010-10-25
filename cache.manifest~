@@ -12,8 +12,12 @@ resources/images/bg.jpg
 resources/images/octocat.png
 resources/images/settings.png
 http://static.jsconf.us/promotejshs.png
+
 NETWORK:
-http://gist.github.com
-http://gozala.disqus.com
-http://disqus.com
-http://www.google-analytics.com
+http://gist.github.com/
+http://gozala.disqus.com/
+http://disqus.com/
+http://mediacdn.disqus.com/
+http://a3.twimg.com/
+http://a1.twimg.com/
+http://www.google-analytics.com/
