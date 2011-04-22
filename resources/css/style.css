@@ -36,7 +36,7 @@ a[title]:hover::after {
     -moz-box-shadow: -6px 10px 10px rgba(0, 0, 0, 0.5), 5px 6px 10px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -6px 10px 10px rgba(0, 0, 0, 0.5), 5px 6px 10px rgba(0, 0, 0, 0.5);
     box-shadow: -6px 10px 10px rgba(0, 0, 0, 0.5), 5px 6px 10px rgba(0, 0, 0, 0.5);
-    -webkit-border-radius: 7px; 
+    -webkit-border-radius: 7px;
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0;
     -moz-border-radius: 7px;
@@ -120,7 +120,7 @@ article a {
     text-shadow: rgba(0, 0, 0, 0.746094) 0px 1px 1px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
-    -webkit-border-radius: 8px; 
+    -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
     padding-left: 4px;
@@ -214,7 +214,7 @@ article a:hover {
 }
 .linux {
     background: #730000;
-}    
+}
 .xulrunner {
     background: #EF4D28;
 }
@@ -222,7 +222,6 @@ article a:hover {
 pre {
     content: counter(section);
     counter-increment: section;
-    border-left: 1px dotted white;
     margin-left: 10px;
     padding-left: 10px;
 }
@@ -243,3 +242,27 @@ pre:nth-line(1n):before {
   .atn { color: #404; }
   .atv { color: #060; }
 }
+
+pre {
+  font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  font-size: 12px;
+  color: #f8f8f8;
+
+  padding: 14px;
+  background: -moz-linear-gradient(0% 100% 0deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.6) 90%);
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(20, 20, 20, 0.7)), to(rgba(20, 20, 20, 0.6)));
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.Operator { color: #79c67b; }
+.Type { color: #9b859d; }
+.Statement { color: #cda869; }
+.Identifier { color: #fc91ad; }
+.Braces { color: #24c2c7; }
+.Keyword { color: #aac6e3; }
+.Function { color: #8da8ec; }
+.Operators { color: #fa8d6a; }
+.String { color: #8f9d6a; }
+.Parens { color: #24c2c7; }
+.Comment { color: #626262; font-style: italic; }
