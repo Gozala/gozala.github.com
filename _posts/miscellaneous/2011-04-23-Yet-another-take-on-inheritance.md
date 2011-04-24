@@ -5,36 +5,37 @@ tags: library oop class inheritance javascript
 ---
 
 Every now and then you need to use inheritance in JavaScript. When you do, you
-suffer, suffer because there is many ways to do that and regardless of your
+suffer, because there's just too many ways to do that and regardless of your
 choice, syntax noise will make your eyes bleed! Well you may consider saving
 your eyes by using a library, but this is not going to save you as you'll be
 drown in an ocean of endless choices!
 
-Don't get me wrong, I like to have a choice, but in manageable quantities.
-Anyway only reasonable solution is: Yet another new library that does exact same
-thing in a slightly different fashion.
+Choice is good, but when it's in manageable quantities. Anyway only reasonable
+solution is: Yet another new library that does exact same thing in a slightly
+different fashion.
 
-That's a short story of how [extendables] micro-library started. Library is very
-minimalistic, only thing it exports is `Extendable`. It's just like built-in
-`Object`, but with additional property `extend`, whose behaves is similar to
-[backbone]'s `Model.extend`.
+That's a short story of how [extendables] micro-library started. It is super
+minimalistic. Function `Extendable` is only thing it exports, which is just
+like built-in `Object`. Only difference is `extend` own property that behaves
+similar to [backbone]'s `Model.extend`.
 
-Method `extend` may be called with an object containing properties that will
-be defined on the resulting constructor's `prototype`, which by the way will
-inherit from the target function's (function who's `extend` method was called)
+`Extendable.extend` may be called with an object containing properties that will
+be defined on the resulting constructor's `prototype`. Which by the way, will
+inherit from the target function's (function who's `extend` was called)
 `prototype`. In addition all own properties of a target will be copied to the
 resulting constructor.
 
-That's actually all it does! In contrast to backbone, library is built with
-ES5 in mind, which makes it aware of new goodies: non-enumerable, non-writable
-and non-configurable properties. On the hand it's requires engines supporting
-ES5. Don't get broken hearted yet, cause you can still use it on IE6 (Please
-note that you'll burn in hell if you do!) and friends, with a help of another
-micro-lib [es5-shim].
+That's actually all of what this library does! In contrast to backbone, library
+is built with ES5 in mind, which makes it aware of new goodies: non-enumerable,
+non-writable and non-configurable properties. This also means that it requires
+ES5 engine to run. But don't get broken hearted yet, as you still can use it
+on IE6 (Please note that you'll burn in hell if you do!) and friends, with a
+help of another micro-lib [es5-shim].
 
 Library is known to work in browsers via AMD loaders, in [jetpack] and in
 [nodejs]. Likely it's going to work on any other CommonJS compliant platform
-as well. Finally here is a [jsfiddle] and source [gist] showing off examples:
+as well. Finally here is a [jsfiddle] and source [gist] showing it off
+with a few examples:
 
 <pre>
 <span class="Comment">/* vim:set ts=2 sw=2 sts=2 expandtab */</span>
@@ -47,7 +48,7 @@ define<span class="Parens">(</span><span class="String">'demo'</span><span class
 
 <span class="String">'use strict'</span><span class="Operators">;</span>
 
-<span class="Identifier">var</span> Extendable <span class="Operators">=</span> <span class="Keyword">require</span><span class="Parens">(</span><span class="String">&quot;<a href="https://github.com/Gozala/extendables/raw/v0.1.2/lib/extendables.js">https://github.com/Gozala/extendables/raw/v0.1.2/lib/extendables.js</a>&quot;</span><span class="Parens">)</span><span class="Operators">.</span>Extendable<span class="Operators">;</span>
+<span class="Identifier">var</span> Extendable <span class="Operators">=</span> <span class="Keyword">require</span><span class="Parens">(</span><span class="String">&quot;<a href="https://github.com/Gozala/extendables/raw/v0.1.2/lib/extendables.js">https://github.com/Gozala/extendables/raw/v0.1.2/lib/extendables.js</a>&quot;</span><span class="Parens">)</span><span class="Operators">.</span>Extendable
 
 <span class="Identifier">var</span> Base <span class="Operators">=</span> Extendable<span class="Operators">.</span>extend<span class="Parens">(</span><span class="Braces">{</span>
   inherited<span class="Operators">:</span> <span class="Function">function</span> inherited<span class="Parens">()</span> <span class="Braces">{</span>
