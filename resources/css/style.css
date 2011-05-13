@@ -219,16 +219,6 @@ article a:hover {
     background: #EF4D28;
 }
 
-pre {
-    content: counter(section);
-    counter-increment: section;
-    margin-left: 10px;
-    padding-left: 10px;
-}
-pre:nth-line(1n):before {
-    content: counter(section);
-
-}
 
 @media print {
   .str { color: #060; }
@@ -248,7 +238,10 @@ pre {
   font-size: 12px;
   color: #f8f8f8;
 
+  margin-left: 10px;
+  padding-left: 10px;
   padding: 14px;
+
   background: -moz-linear-gradient(0% 100% 0deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.6) 90%);
   background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(20, 20, 20, 0.7)), to(rgba(20, 20, 20, 0.6)));
   -webkit-border-radius: 10px;
