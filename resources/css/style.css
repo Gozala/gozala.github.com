@@ -198,18 +198,18 @@ article a:hover {
     left: -31px;
     top: 30px;
 }
-.extension {
-    background: #005242;
+.ideas {
+    background: #24c2c7;
 }
 
-.bespin {
+.bespin, .editor {
     background: #D40050;
 }
 
-.ubiquity {
+.ubiquity, .extension, .jetpack, .addon, .extension {
     background: #3299CC;
 }
-.commonjs {
+.commonjs, .serverjs {
     background: #5B6185;
 }
 .linux {
