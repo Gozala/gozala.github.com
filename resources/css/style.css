@@ -233,17 +233,30 @@ article a:hover {
   .atv { color: #060; }
 }
 
-pre {
+pre, code {
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-  font-size: 12px;
   color: #f8f8f8;
+
+  background: -moz-linear-gradient(0% 100% 0deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.6) 90%);
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(20, 20, 20, 0.7)), to(rgba(20, 20, 20, 0.6)));
+}
+
+code {
+  font-size: 13px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+pre {
+  font-size: 12px;
 
   margin-left: 10px;
   padding-left: 10px;
   padding: 14px;
 
-  background: -moz-linear-gradient(0% 100% 0deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.6) 90%);
-  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(20, 20, 20, 0.7)), to(rgba(20, 20, 20, 0.6)));
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -259,3 +272,5 @@ pre {
 .String { color: #8f9d6a; }
 .Parens { color: #24c2c7; }
 .Comment { color: #626262; font-style: italic; }
+.Error { color: #cf6a4c; text-decoration: underline; }
+.Exception { color: #cf6a4c; }
