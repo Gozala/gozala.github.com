@@ -99,8 +99,8 @@ be asynchronous all of it's users will have to be converted as well:
 
 ### 4. Progress tracking
 
-Finally if your function depends on multiple asynchronous inputs than will have
-to manually track each.
+Finally if your function depends on multiple asynchronous inputs then you will
+have to manually track each.
 
     #!/bin/javascript
     function makeView(templateURI, dataURI, callback) {
@@ -134,7 +134,7 @@ of fact actual logic can be expressed as:
     }
 
 So, would not it be better to abstract timing out of logic when it's not
-necessary rather then keep solving all this issues in each and every function ?
+necessary rather than keep solving all this issues in each and every function ?
 As a mater of fact solution has being there for ages in a form of
 [promises][Promises/A], but for some reason people and web standards tend to
 use callbacks instead. Maybe because they feel complicated, but that does not
@@ -146,7 +146,7 @@ necessary has to be the case:
     console.log(sum(1, 2))  // => 3
 
     // Working with promises should not require nothing more
-    // then marker telling that function can accept input in
+    // than marker telling that function can accept input in
     // form of promises
     sum = promised(sum)
     console.log = promised(console.log)
