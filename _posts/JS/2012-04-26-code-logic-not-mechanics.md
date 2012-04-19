@@ -157,8 +157,8 @@ necessary has to be the case:
     // Will also accept promises as arguments
     var a = defer()         // make promise
     var b = sum(a, 1)
-    var b = sum(b, 5)
-    console.log(b)          // eventually prints => 17
+    var c = sum(b, 5)
+    console.log(c)          // eventually prints => 17
     a.resolve(11)           // fulfill promise
 
 We should not be handling and propagating exceptions manually in each function,
