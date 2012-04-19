@@ -108,12 +108,12 @@ to manually track each.
       readURI(templateURI, function(error, content) {
         if (error) return callback(error)
         template = content
-        if (!--pendind) Mustache.render(template, data)
+        if (!--pending) Mustache.render(template, data)
       })
-      readURI(templateURI, function(error, content) {
+      readURI(dataURI, function(error, content) {
         if (error) return callback(error)
         data = content
-        if (!--pendind) Mustache.render(template, data)
+        if (!--pending) Mustache.render(template, data)
       })
     }
 
@@ -186,9 +186,9 @@ no need to track progress of each eventual value if we just care about a group!
 Noticed a pattern ? We just write a logic, and if it needs to handle
 asynchronous input we wrap it into `promised(logic)`.
 
-Whats really important here is that such functions can be used to systems as
-black boxes as they do have **input** and **output**. Demonstration of that is
-an example from above:
+Whats really important here is that such functions can be used to build systems
+in black boxes, since they do have **input** and **output**. Demonstration of
+that is an example from above (assuming that `readURI` returns promise):
 
     #!/bin/javascript
     function makeView(templateURI, dataURI) {
