@@ -102,6 +102,7 @@ header > a.bookmark {
 }
 article {
     display: block;
+    max-width: 50em;
     text-shadow: rgba(100, 100, 100, 0.496094) 0px 1px 1px;
     -webkit-box-shadow: 2px 2px 4px #333;
     -moz-box-shadow: 2px 2px 4px #333;
@@ -171,6 +172,7 @@ article a:hover {
     -webkit-transform: rotate(45deg);
     /* shadow */
     -moz-box-shadow: 0 0 1em #333;
+    box-shadow: 0 0 1em #333;
     -webkit-box-shadow: 0 0 1em #333;
     display: block;
     border: 1px solid #faa;
@@ -251,8 +253,6 @@ code {
 }
 
 pre {
-  font-size: 12px;
-
   margin-left: 10px;
   padding-left: 10px;
   padding: 14px;

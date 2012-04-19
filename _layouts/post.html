@@ -13,16 +13,18 @@
         <link type="text/css" rel="stylesheet" href="/resources/css/style.css"/>
         <link type="text/css" rel="stylesheet" href="/resources/css/gist.css"/>
         <link type="text/css" rel="stylesheet" href="/resources/css/lightbox.css"/>
+        <link type="text/css" rel="stylesheet" href="/resources/css/ambiance.css"/>
+        <script src="/resources/js/rainbow-custom.min.js"></script>
         <title>{{ page.title }}</title>
     </head>
     <body>
+      <div>
         <div class="ribbon">
             <a target="_blank" href="https://github.com/Gozala/">Fork me on GitHub</a>
         </div>
-        <ul>
         {% for post in site.posts %}
             {% if post.title == page.title %}
-            <li id="post">
+            <section id="post">
                 <header>
                     <a class="bookmark" href='/' target='_self'>{{ page.title }}</a>
                 </header>
@@ -44,15 +46,35 @@
                     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=gozala">comments powered by Disqus.</a></noscript>
                     <a id="promotejs" href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array' title='JavaScript JS Documentation: JS Array some, JavaScript Array some, JS Array .some, JavaScript Array .some'><img src='http://static.jsconf.us/promotejshs.png' height='150' width='180' alt='JavaScript JS Documentation: JS Array some, JavaScript Array some, JS Array .some, JavaScript Array .some'/></a>
                 </footer>
-            </li>
+            </section>
             {% endif %}
             {% if post.title != page.title %}
-            <li>
+            <section>
                 <a class="bookmark {{ post.tags | join( ) }}" target="_self" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
-            </li>
+            </section>
             {% endif %}
         {% endfor %}
-        </ul>
+        <script type="text/javascript">
+          var shebang = /#!\S*\/(\S*)/
+          var snippets = document.getElementsByTagName('pre')
+          var index = 0, count = snippets.length
+          function highlight(element, language, code) {
+            snippet.className += 'ambiance'
+            Rainbow.color(code, language, function(html) {
+              element.innerHTML = html
+            })
+          }
+          while (index < count) {
+            var snippet = snippets[index++]
+            var code = snippet.textContent
+            var lines = code.split('\n')
+            var head = lines.shift()
+            if (!lines[0]) lines.shift()
+            var tail = lines.join('\n')
+            var match = shebang.exec(head)
+            if (match) highlight(snippet, match[1], tail)
+          }
+        </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-7949642-2']);
@@ -63,5 +85,6 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
+      </div>
     </body>
 </html>
