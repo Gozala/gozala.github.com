@@ -155,11 +155,12 @@ necessary has to be the case:
     console.log(sum(1, 2))  // => 3
 
     // Will also accept promises as arguments
-    var a = defer()         // make promise
+    var deferred = defer()          // make promise
+    var a = deferred.promise
     var b = sum(a, 1)
     var c = sum(b, 5)
-    console.log(c)          // eventually prints => 17
-    a.resolve(11)           // fulfill promise
+    console.log(c)                  // eventually prints => 17
+    deferred.resolve(11)            // fulfill promise
 
 We should not be handling and propagating exceptions manually in each function,
 we should only handle them when we plan to recover:
