@@ -176,7 +176,7 @@ we should only handle them when we plan to recover:
     // Finally if when ready we handle exception in computation
     c.then(null, console.error) // => Error: Boom !
 
-If we just want to group multiple values into on there is an `Array` for that
+If we just want to group multiple values into one there is an `Array` for that
 no need to track progress of each eventual value if we just care about a group!
 
     #!/bin/javascript
