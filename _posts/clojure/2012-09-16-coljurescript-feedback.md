@@ -24,7 +24,7 @@ already if I could have submitted them on github.
 
 I find API for accessing properties with computed names awkward:
 
-    #!env/clojure
+    #!env/scheme
     (aget js/require.extensions ".cljs")
 
 At least because documentation of [get][] function, matches better
@@ -37,14 +37,14 @@ think a syntax sugar would be more appropriate.
 API for setting properties with computed names is even clunkier:
 
 
-    #!env/clojure
+    #!env/scheme
     (set! (aget js/require.extensions ".cljs") compile)
     
 
 I think extending [set!][] special form would make a lot more sense:
 
 
-    #!env/clojure
+    #!env/scheme
     (set! js/require.extensions ".cljs" compile)
         
 
@@ -54,7 +54,7 @@ I think extending [set!][] special form would make a lot more sense:
 I really enjoy how simple regular expressions translate to JS:
 
 
-    #!env/clojure
+    #!env/scheme
     #"[^a-z\s]" ;; => /[^a-z\s]/
 
 
@@ -63,7 +63,7 @@ Although I could not find any way to create regular expressions with
 constructor:
 
 
-    #!env/clojure
+    #!env/scheme
     (js/RegExp. "\\w+\\s" "g")        ;; => /\w+\s/g
     (js/RegExp. "^\\-\\-\\w*$" "m")   ;; => /^\-\-\w*$/m
     (js/RegExp. "foo" "i")            ;; => /foo/i
@@ -77,7 +77,7 @@ I wish literal syntax had support for search flags, maybe even via [clojure tags
 In clojure and inherently clojurscript `catch` clause of the `try` special form
 takes error type, error name and expressions:
 
-    #!env/clojure
+    #!env/scheme
     ;; for Clojurescript use js/Object as type
     (try
        (/ 1 0)
