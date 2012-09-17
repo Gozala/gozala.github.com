@@ -2,6 +2,7 @@
 layout: post
 title: (feedback :clojurescript)
 tags: clojure clojurescript cljs feedback
+published: true
 ---
 
 Lately I have being very entusiastic about [clojurescript][], but I keep running
