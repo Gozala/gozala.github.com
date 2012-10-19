@@ -5,25 +5,26 @@ tags: jetpack sdk modules commonjs
 published: false
 ---
 
-There have being some [significant changes][layout changes] to Add-on
+There have being some [significant changes][layout changes] to the Add-on
 SDK lately, which is a step forward to landing and [shipping SDK in
 Firefox][SDK in Firefox]. In this post I'll try to cover what the
 changes are.
 
-Probably the most important detail is that SDK no longer has notion
-of packages. This was both mandatory since in a future where SDK
-is in Firefox we won't be able to perform complicated [module search][]
-at compile time and even more so at runtime. We also see it as great
-improvement to current ambiguous behavior of `require`. Now SDK is just a
-`lib`rary of modules. Once it's in Firefox, old-style addons will be able
-to take advantage of individual parts. We also hope to empower other Mozilla
-projects with [CommonJS][] so that new APIs & features cane be authored in de
-facto standard [CommonJS][] module format. There for idiomatic way to require
-SDK modules now is: `require("sdk/panel")`. Low level and usually less stable
-APIs will have longer require paths: `require("sdk/window/utils")`.
+Probably the most important detail is that SDK no longer uses packages. 
+This is an improvement for two reasons:
 
+1. once SDK is in Firefox we won't be able to perform complicated [module search][]
+at compile time and even more so at runtime. 
+1. We also see it as great improvement to current ambiguous behavior of `require`. 
+Now SDK is just a `lib`rary of modules. Once it's in Firefox, all addons will be able
+to load any SDK module without needing to convert completely to an SDK-style project. 
+1. We also hope to empower other Mozilla projects with [CommonJS][] so that new APIs 
+& features cane be authored in de facto standard [CommonJS][] module format. 
 
-To ensure that no addon's will be affected by this change we have
+Going forward, the idiomatic way to require an SDK modules now is: `require("sdk/panel")`. 
+Low level and usually less stable APIs will have longer require paths: `require("sdk/window/utils")`.
+
+To ensure that addons built using the old layout are affected by this change we have
 analyzed [all the module requirements][analyzes] of all [AMO][] hosted
 addons and created a [mapping][module mapping] that maps module requirements
 used to a new style. **CFX** - SDK's CLI tool uses this mapping to allow
@@ -31,7 +32,8 @@ backwards compatible behavior, while we have no plans on breaking backwards
 compatibility in a visible future, we still would like to encourage authoring
 new add-ons in idiamatic style this will make your code a lot more portable!
 
-
+This new layout is currently on the Master branch and is scheduled to be released on 
+December 11 as version 1.12. 
 
 [sdk repo]:https://github.com/mozilla/addon-sdk
 [SDK in Firefox]:https://github.com/mozilla/addon-sdk/wiki/JEP%20SDK%20in%20Firefox
