@@ -2,7 +2,7 @@
 layout: post
 title: Recent changes in SDK
 tags: jetpack sdk modules commonjs
-published: false
+published: true
 ---
 
 There have being some [significant changes][layout changes] to the Add-on
