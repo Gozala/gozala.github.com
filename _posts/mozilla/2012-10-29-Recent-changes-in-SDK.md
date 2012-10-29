@@ -24,7 +24,8 @@ to load any SDK module without needing to convert completely to an SDK-style pro
 Going forward, the idiomatic way to require an SDK modules now is: `require("sdk/panel")`. 
 Low level and usually less stable APIs will have longer require paths: `require("sdk/window/utils")`.
 
-To ensure that addons built using the old layout are affected by this change we have
+To ensure that addons built using the old layout are not affected by
+this change we have
 analyzed [all the module requirements][analyzes] of all [AMO][] hosted
 addons and created a [mapping][module mapping] that maps module requirements
 used to a new style. **CFX** - SDK's CLI tool uses this mapping to allow
