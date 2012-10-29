@@ -19,7 +19,7 @@ at compile time and even more so at runtime.
 Now SDK is just a `lib`rary of modules. Once it's in Firefox, all addons will be able
 to load any SDK module without needing to convert completely to an SDK-style project. 
 1. We also hope to empower other Mozilla projects with [CommonJS][] so that new APIs 
-& features cane be authored in de facto standard [CommonJS][] module format. 
+& features can be authored in de facto standard [CommonJS][] module format. 
 
 Going forward, the idiomatic way to require an SDK modules now is: `require("sdk/panel")`. 
 Low level and usually less stable APIs will have longer require paths: `require("sdk/window/utils")`.
