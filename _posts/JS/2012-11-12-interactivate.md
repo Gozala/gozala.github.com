@@ -18,7 +18,7 @@ etc... I'm sure we can do better than that, here is a little demo of what I
 think it should be like:
 
 
-<iframe src="http://player.vimeo.com/video/53311490?badge=0" width="500" height="341" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+<iframe src="http://player.vimeo.com/video/53311490?badge=0" width="500" height="341" frameborder="0" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe> 
 
 
 You can [give it a try][interactivate] yourself or check out the code
