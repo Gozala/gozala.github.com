@@ -10,8 +10,8 @@ I have made a little live-coding experiment that is primarily inspired by
 being pioneered by othe cool projects like [light table][].
 
 I do write JS & HTML every single day and I can't even imagine doing that
-without a [repl][]. Although [scratchpad][] made me realized how I hate
-**loop** part of it! Another problem is an amount of time one needs to waste,
+without a [REPL][]. Although [scratchpad][] made me realized how I hate
+**loop** part of [REPL][]! Another problem is an amount of time one needs to waste,
 while being inspired, to get a glimpse of an idea, live on a
 screen. Creating HTML, JS files wiring them with each other, page refreshes,
 etc... I'm sure we can do better than that, here is a little demo of what I
@@ -40,7 +40,7 @@ Finally I really hope to see [Scratchpad][] picking up some of this soon!
 [Inventing on Principle]:https://vimeo.com/36579366
 [Mathematica]:http://www.wolfram.com/mathematica/
 [light table]:http://www.lighttable.com/
-[repl]:http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+[repl]:http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read Eval Print Loop"
 [Scratchpad]:https://developer.mozilla.org/en-US/docs/Tools/Scratchpad
 [interactivate]:http://jeditoolkit.com/interactivate/
 [repo]:https://github.com/Gozala/interactivate
