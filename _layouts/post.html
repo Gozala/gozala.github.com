@@ -58,22 +58,29 @@
           var shebang = /#!\S*\/(\S*)/
           var snippets = document.getElementsByTagName('pre')
           var index = 0, count = snippets.length
-          function highlight(element, language, code) {
-            snippet.className += 'ambiance'
+          function highlight(element, language, code, next) {
+            element.className += 'ambiance'
             Rainbow.color(code, language, function(html) {
               element.innerHTML = html
+              next()
             })
           }
-          while (index < count) {
-            var snippet = snippets[index++]
-            var code = snippet.textContent
-            var lines = code.split('\n')
-            var head = lines.shift()
-            if (!lines[0]) lines.shift()
-            var tail = lines.join('\n')
-            var match = shebang.exec(head)
-            if (match) highlight(snippet, match[1], tail)
+
+          function next() {
+            if (index < count) {
+              var snippet = snippets[index++]
+              var code = snippet.textContent
+              var lines = code.split('\n')
+              var head = lines.shift()
+              if (!lines[0]) lines.shift()
+              var tail = lines.join('\n')
+              var match = shebang.exec(head)
+              if (match) highlight(snippet, match[1], tail, next)
+              else next()
+            }
           }
+
+          next()
         </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
