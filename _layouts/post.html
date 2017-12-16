@@ -58,7 +58,7 @@
           var snippets = document.getElementsByTagName('pre')
           var index = 0, count = snippets.length
           function highlight(element, language, code, next) {
-            element.className += 'ambiance'
+            element.className += ' ambiance'
             Rainbow.color(code, language, function(html) {
               element.innerHTML = html
               next()
