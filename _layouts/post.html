@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-        <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-        <meta name="generator" content="Jekyll"/>
-        <meta name="author" content="{{ site.author.name }}"/>
-        <meta name="description" content="{{ site.description }}"/>
-        <meta name="google-site-verification" content="GVY__PHOcWDgzezw9Uypnp43Nqn0VxvIvC688wLvNh8" />
-        <base target="_blank"/>
-        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml"/>
-        <link type="text/css" rel="stylesheet" href="/resources/css/style.css"/>
-        <link type="text/css" rel="stylesheet" href="/resources/css/gist.css"/>
-        <link type="text/css" rel="stylesheet" href="/resources/css/lightbox.css"/>
-        <link type="text/css" rel="stylesheet" href="/resources/css/ambiance.css"/>
-        <script src="/resources/js/rainbow-custom.min.js"></script>
-        <title>{{ page.title }}</title>
-    </head>
-    <body>
-      <div>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="generator" content="Jekyll" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="google-site-verification" content="GVY__PHOcWDgzezw9Uypnp43Nqn0VxvIvC688wLvNh8" />
+    <base target="_blank" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml" />
+    <link type="text/css" rel="stylesheet" href="/resources/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="/resources/css/gist.css" />
+    <link type="text/css" rel="stylesheet" href="/resources/css/lightbox.css" />
+    <link type="text/css" rel="stylesheet" href="/resources/css/ambiance.css" />
+    <script src="/resources/js/rainbow-custom.min.js"></script>
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    <div>
         <div class="ribbon">
-            <a target="_blank" href="https://github.com/Gozala/">Fork me on GitHub</a>
+            <a target="_blank" rel="me" href="https://github.com/Gozala/">Fork me on GitHub</a>
         </div>
-        {% for post in site.posts %}
-            {% if post.title == page.title %}
-            <section id="post">
-                <header>
-                    <a class="bookmark" href='/' target='_self'>{{ page.title }}</a>
-                </header>
-                <article>
-                    {{ content }}
-                </article>
-                <footer>
-                    <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                      /**
-                        * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-                        */
-                      (function() {
-                       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                       dsq.src = 'http://gozala.disqus.com/embed.js';
-                       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                      })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=gozala">comments powered by Disqus.</a></noscript>
-                </footer>
-            </section>
-            {% endif %}
-            {% if post.title != page.title %}
-            <section>
-                <a class="bookmark {{ post.tags | join( ) }}" target="_self" href="{{ post.url }}#post">{{ post.title }}<time>{{ post.date | date_to_string }}</time></a>
-            </section>
-            {% endif %}
-        {% endfor %}
+        {% for post in site.posts %} {% if post.title == page.title %}
+        <section id="post">
+            <header>
+                <a class="bookmark" href='/' target='_self'>{{ page.title }}</a>
+            </header>
+            <article>
+                {{ content }}
+            </article>
+            <footer>
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /**
+                      * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+                      */
+                    (function () {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://gozala.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the
+                    <a href="http://disqus.com/?ref_noscript=gozala">comments powered by Disqus.</a>
+                </noscript>
+            </footer>
+        </section>
+        {% endif %} {% if post.title != page.title %}
+        <section>
+            <a class="bookmark {{ post.tags | join( ) }}" target="_self" href="{{ post.url }}#post">{{ post.title }}
+                <time>{{ post.date | date_to_string }}</time>
+            </a>
+        </section>
+        {% endif %} {% endfor %}
         <script type="text/javascript">
-          var shebang = /#!\S*\/(\S*)/
-          var snippets = document.getElementsByTagName('pre')
-          var index = 0, count = snippets.length
-          function highlight(element, language, code, next) {
-            element.className += ' ambiance'
-            Rainbow.color(code, language, function(html) {
-              element.innerHTML = html
-              next()
-            })
-          }
-
-          function next() {
-            if (index < count) {
-              var snippet = snippets[index++]
-              var code = snippet.textContent
-              var lines = code.split('\n')
-              var head = lines.shift()
-              if (!lines[0]) lines.shift()
-              var tail = lines.join('\n')
-              var match = shebang.exec(head)
-              if (match) highlight(snippet, match[1], tail, next)
-              else next()
+            var shebang = /#!\S*\/(\S*)/
+            var snippets = document.getElementsByTagName('pre')
+            var index = 0, count = snippets.length
+            function highlight(element, language, code, next) {
+                element.className += ' ambiance'
+                Rainbow.color(code, language, function (html) {
+                    element.innerHTML = html
+                    next()
+                })
             }
-          }
 
-          next()
+            function next() {
+                if (index < count) {
+                    var snippet = snippets[index++]
+                    var code = snippet.textContent
+                    var lines = code.split('\n')
+                    var head = lines.shift()
+                    if (!lines[0]) lines.shift()
+                    var tail = lines.join('\n')
+                    var match = shebang.exec(head)
+                    if (match) highlight(snippet, match[1], tail, next)
+                    else next()
+                }
+            }
+
+            next()
         </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-7949642-2']);
             _gaq.push(['_trackPageview']);
-            (function() {
+            (function () {
                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-      </div>
-    </body>
+    </div>
+</body>
+
 </html>
