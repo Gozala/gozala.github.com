@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/gozala
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gozala.io
+  * I am gozala (https://keybase.io/gozala) on keybase.
+  * I have a public key ASC1p7w_BQybiSNmeAzX3PuBVbPHyvp8j8Kc3wKZF_Xw5Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205e9dcb12784744bef39666b99fcdfa1bd5d40dbb35e1bc5630f2bfb45b6761dd0a",
+      "host": "keybase.io",
+      "kid": "0120b5a7bc3f050c9b892366780cd7dcfb8155b3c7cafa7c8fc29cdf029917f5f0e50a",
+      "uid": "3bd2c7adc8cbb5b0015409ef66b48e19",
+      "username": "gozala"
+    },
+    "merkle_root": {
+      "ctime": 1535748691,
+      "hash": "9e9e3ad4d61d1af8944b8512a178046e2fe72beb7822914b82597dce81b8e5f5969f7bd722d562bcaa375a9e9515cffe97e41d32d4364375810795afe7781d3a",
+      "hash_meta": "729f404a1c13cc3934bae50ca2798f8859c655bc951e570c4bf0aba000fef439",
+      "seqno": 3546296
+    },
+    "service": {
+      "entropy": "2EPsh8TlBDswrQKsV4Jbp2Dp",
+      "hostname": "gozala.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.5.1"
+  },
+  "ctime": 1535748727,
+  "expire_in": 504576000,
+  "prev": "7292d817b39d8d067069b5fedc6e95ea4545b5a797e0d8cd2f35d2ad188942e4",
+  "seqno": 34,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtae8PwUMm4kjZngM19z7gVWzx8r6fI/CnN8CmRf18OUKp3BheWxvYWTESpcCIsQgcpLYF7OdjQZwabX+3G6V6kVFtaeX4NjNLzXSrRiJQuTEIJF3M3bHiqPhZGbTDJmLV71mMxFNyWC7dgDpIlNtJ66uAgHCo3NpZ8RAbUqSKyIV3kqsHmW2RT4SP/cMEs1LZlGQMtzAV59JFKJLuB+r92ENZw73WSb5WU9CLCrzVG2CmFn6Hsh8lkt7C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP+Stgno10Q8NQGhlLD3EYcepNsKV3nlKoRnpJovRMnQo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gozala
+
+==================================================================
