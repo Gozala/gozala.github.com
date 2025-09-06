@@ -15,22 +15,34 @@ Senior research engineer with particular interest in [local-first software princ
 
 ----
 
+## Cooperative Knowledge Substrate
+
+Your data lives in silos. Either you surrender to one corporate suite or you become the glue between tools. This worked when only big companies could afford to build software.
+
+LLMs change everything: anyone can create specialized tools. Soon we'll have thousands of them. For these tools to be useful, they need to cooperate on shared data - but no infrastructure exists for this, which creates a narrow window to invert the model: instead of you going to applications, applications come to your data.
+
+#### Dialog
+
+[Dialog](./dialog) is an attempt to seize this opportunity - a [local-first][] database that works like Git for knowledge. Branch ideas, fork sessions, merge insights. Applications come to your data, defining their own concepts that map to shared facts. When concepts overlap, cooperation emerges. When they don't, rules bridge the gap.
+
+Semantic triples, Datalog and probabilistic search trees come together to enable efficient, query-guided replication through encrypted blobs on commodity storage (S3, R2, IPFS). [Follow the journey →](./dialog)
+
 ## Local First
 
-Asymmetry of traditional server/client architectures creates a power disbalance. Power is exercised by trapping user's data for profit. P2P/Distributed/Decentralized technologies have a symmetric architecture (every peer is both server and client) and that leads to a different data ownership model. I devoted last years of my career at Mozilla enabling such technologies.  
+Asymmetry of traditional server/client architectures creates a power disbalance. Power is exercised by trapping user's data for profit. P2P/Distributed/Decentralized technologies have a symmetric architecture (every peer is both server and client) and that leads to a different data ownership model. I devoted last years of my career at Mozilla enabling such technologies.
 
 #### Libdweb
 
 Identifying gaps of the web platform and filling those in Firefox to bring those technologies was project [libdweb](./libdweb). Through collaboration with [IPFS][], [Dat][] and [SSB][] communities missing primitives were recognized, which I have implemented as an experimental Firefox extension APIs. This lead to several successes:
 
 - [IPFS Protocol support in Firefox](./ipfs).
-- [Dat protocol support for Firefox](./dat) (Compatible with [Beaker][] browser) and [Cliqz][]. 
+- [Dat protocol support for Firefox](./dat) (Compatible with [Beaker][] browser) and [Cliqz][].
 - [Cliqz concept mobile browser](./dat-mobile) with Dat protocol support.
 - [WebTorrent concept browser](./wtp)
 
 #### Lunet
 
-The goal of [Lunet](./lunet) project was enabling symmetric systems but within the constraints of existing web platform. It (ab)used range of web capabilities _([ServiceWorkers][], [Sandboxed iframe][sandoxed-iframe] and [Content Origin Policies][])_ to create a sandboxed web runtime in which applications work offline, operate on user data and are unable to track / silo users. 
+The goal of [Lunet](./lunet) project was enabling symmetric systems but within the constraints of existing web platform. It (ab)used range of web capabilities _([ServiceWorkers][], [Sandboxed iframe][sandoxed-iframe] and [Content Origin Policies][])_ to create a sandboxed web runtime in which applications work offline, operate on user data and are unable to track / silo users.
 
 It also opportunistically leveraged companion native application to use capabilities unavailable in web platform, proposing [progressive peer-to-peer web application (PPWA)](./ppwa "Progressive peer-to-peer web applications (PPWA)") architecture. [Read full story](./lunet)
 
@@ -147,3 +159,4 @@ This project replaced [TomTom Home][tomtom-home] desktop application _(Primarily
 [spacial-ui]: https://medium.com/free-code-camp/lossless-web-navigation-spatial-model-37f83438201d
 [ipdf]:https://github.com/gozala/ipdf/
 [end-user programming]:https://www.inkandswitch.com/end-user-programming.html
+[Dialog]:https://github.com/dialog-db/
