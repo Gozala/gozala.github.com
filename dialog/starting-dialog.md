@@ -1,6 +1,6 @@
 ---
 title: Dialog - Personal Substrate for Cooperative Computing
-date: 2025-08-12
+date: 2025-09-12
 ---
 
 # Dialog - Personal Substrate for Cooperative Computing

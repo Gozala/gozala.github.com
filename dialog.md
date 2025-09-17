@@ -10,9 +10,19 @@ title: Dialog
 
 ----
 
+## Paradigm Shift
+
+*September 16, 2025*
+
+Database architecture assumes predictable access patterns to optimize for - yet LLMs enable the opposite: open-ended exploration without predetermined questions. This fundamental incompatibility signals a broader computing shift. Today's service-oriented paradigm aggregates users around platforms, but when software creation democratizes, the economics invert. Why accept extracted value and siloed data when personalized tools can cooperate on user-owned substrates? Dialog explores this architectural reorientation: aggregating tools around users instead of users around services.
+
+[Read more →](./dialog/paradigm-shift)
+
+----
+
 ## Starting Dialog
 
-*September 2025*
+*September 12, 2025*
 
 Software infrastructure evolved around centralized data control, with rigid schemas and access patterns with businesses and incentives built around it. LLMs democratize software creation: when anyone can vibecode a tool, the bottleneck shifts from software scarcity to data access and cooperation. This shift renders existing infrastructure inadequate - built for silos, it can't support untrusted, on-demand code execution with flexible access across all your data. Dialog is an attempt to build infrastructure addressing these new challenges: personal [local-first][] knowledge substrate for cooperative computing.
 

@@ -1,3 +1,8 @@
+---
+title: Paradigm Shift
+date: 2025-09-16
+---
+
 # Paradigm Shift
 
 Database architecture and today's software infrastructure rest on a fundamental assumption: predict access patterns, then optimize for them. Large Language Models (LLMs) enable the opposite: open-ended exploration without knowing what questions will be asked. These incompatible paradigms signal a broader shift in computing.
