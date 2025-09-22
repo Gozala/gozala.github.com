@@ -59,10 +59,6 @@ Each eroded foundation accelerates the others. As development costs plummet, com
 
 This creates architectural instability rather than mere inefficiency. Service-oriented systems become competitively unsustainable as their economic supports dissolve. The architecture becomes actively disadvantaged against systems designed for software abundance rather than scarcity.
 
-You're right, both phrases are confusing. Here's a clearer version:
-
-You're right - "this" appears 6 times in the Renaissance section. Here's a revision that reduces the repetition:
-
 ## Renaissance
 
 Disruption creates favorable conditions and opportunity for a different user-oriented paradigm to emerge, one that aggregates tools around users displacing one that aggregates users around services.
