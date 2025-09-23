@@ -1,3 +1,8 @@
+---
+title: Cypherpunk Fellows Program Application
+date: 2025-09-23
+---
+
 # Cypherpunk Fellows Program Application
 
 ## Project Overview
