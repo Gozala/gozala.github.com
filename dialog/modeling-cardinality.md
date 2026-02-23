@@ -1,3 +1,8 @@
+---
+title: Modeling Cardinality
+date: 2026-02-20
+---
+
 # Modeling Cardinality
 
 *How Dialog DB handles concurrent writes from tools with different cardinality assumptions.*
