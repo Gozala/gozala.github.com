@@ -43,9 +43,12 @@ Every claim is linked to a `Provenance` capturing when and where it was asserted
 
 ```yaml
 - the: issue/assignee
-  of:  did:key:zIssue42
-  is:  did:key:zAlice
-  cause: { by: did:key:zHome, period: 3, moment: 7 }
+  of: did:key:zIssue42
+  is: did:key:zAlice
+  cause:
+  	by: did:key:zHome
+  	period: 3
+  	moment: 7
 ```
 
 ## Semantic Layer
@@ -57,12 +60,12 @@ Two independently developed tools might define their concepts like this. Triage,
 ```yaml
 triage:
   Issue:
-    where:
+    with:
       description: issue/description
       status: issue/status
       assignee:
-        domain: issue
-        assert: Entity
+        the: issue/assignee
+        as: Entity
 ```
 
 Squad, a team-oriented tool that models the same domain as incidents with multiple assignees:
@@ -70,12 +73,12 @@ Squad, a team-oriented tool that models the same domain as incidents with multip
 ```yaml
 squad:
   Incident:
-    where:
+    with:
       overview: issue/description
       status: issue/status
       assignee:
-        domain: issue
-        assert: Entity
+        the: issue/assignee
+        as: Entity
         cardinality: many
 ```
 
@@ -98,148 +101,198 @@ assert!:
   the:   issue/assignee
   of:    did:key:zIssue42
   is:    did:key:zDana
-  cause: { by: did:key:zHome, period: 3, moment: 9 }
+  cause:
+  	by: did:key:zHome
+  	period: 3
+  	moment: 9
 ```
 
 When `cause` is absent, no succession is intended and the assertion is additive. When `cause` is present, the intent is to succeed the referenced claim and make the asserted value current.
 
 The transactor resolves this by looking at all existing claims for the same entity-attribute pair.
 
+#### Starting Condition
+
+We will consider following as our starting condition for all the scenarios. Squad has assigned Alice, Bob, and Carol to the issue:
+
+```yaml
+- the: issue/assignee
+  of:  did:key:zIssue42
+  is:  did:key:zAlice
+  cause:
+  	by: did:key:zSquad
+  	period: 2
+  	moment: 3
+- the: issue/assignee
+  of:  did:key:zIssue42
+  is:  did:key:zBob
+  cause:
+  	by: did:key:zSquad
+  	period: 3
+  	moment: 8
+- the: issue/assignee
+  of:  did:key:zIssue42
+  is:  did:key:zCarol
+  cause:
+  	by: did:key:zSquad
+  	period: 4
+  	moment: 2
+```
+
 ### Already Current
 
-If the asserted value is already present and is already the latest, nothing changes.
+Triage asserts Carol as assignee. It is redundant but Triage has not looked at latest assignee.
 
-Squad has assigned Alice, Bob, and Carol to the issue:
+```yaml
+assert!:
+  the: issue/assignee
+  of: did:key:zIssue42
+  is: did:key:zCarol
+```
+
+Carol is already an assignee, so the assertion is redundant and no associations are made.
+
+### Promote as Current
+
+If the asserted value is already present but is not the latest, it gets promoted: retracted and re-asserted with a new provenance.
+
+Triage sees Carol as the latest assignee and re-assigns issue to Bob. From Squad's perspective Bob is already an assignee even though not latest:
+
+```yaml
+assert!:
+  the: issue/assignee
+  of: did:key:zIssue42
+  is: did:key:zBob
+  cause:
+  	by: did:key:zSquad
+  	period: 4
+  	moment: 2
+```
+
+Since assignment to Bob already exists but is not the latest, assignment gets promoted to latests:
 
 ```yaml
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zAlice
-  cause: { by: did:key:zHome, period: 3, moment: 7 }
-- the: issue/assignee
-  of:  did:key:zIssue42
-  is:  did:key:zBob
-  cause: { by: did:key:zHome, period: 3, moment: 8 }
-- the: issue/assignee
-  of:  did:key:zIssue42
-  is:  did:key:zCarol
-  cause: { by: did:key:zHome, period: 3, moment: 9 }  # ← latest
-```
-
-Squad promotes Carol — she just accepted the task — by asserting her with `cause` pointing to her current claim's provenance:
-
-```yaml
-assert!:
-  the:   issue/assignee
-  of:    did:key:zIssue42
-  is:    did:key:zCarol
-  cause: { by: did:key:zHome, period: 3, moment: 9 }
-```
-
-Carol is already the latest, so the assertion is redundant and nothing changes.
-
-### Promoted to Current
-
-If the asserted value is already present but is not the latest, it is promoted: retracted and re-asserted with a new provenance.
-
-Triage reads Dana as the latest assignee and reassigns to Bob, who is already present but not current:
-
-```yaml
-assert!:
-  the:   issue/assignee
-  of:    did:key:zIssue42
-  is:    did:key:zBob
-  cause: { by: did:key:zWork, period: 4, moment: 1 }
-```
-
-Bob exists but is not the latest, so he is promoted and Dana is retracted:
-
-```yaml
-- the: issue/assignee
-  of:  did:key:zIssue42
-  is:  did:key:zAlice
-  cause: { by: did:key:zHome, period: 3, moment: 7 }
+  cause:
+  	by: did:key:zSquad
+  	period: 2
+  	moment: 3
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zCarol
-  cause: { by: did:key:zHome, period: 3, moment: 9 }
+  cause:
+  	by: did:key:zSquad
+  	period: 4
+  	moment: 2
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zBob
-  cause: { by: did:key:zWork, period: 4, moment: 2 }  # ← latest; dana retracted
+  cause:
+  	by: did:key:zTriage
+  	period: 5
+  	moment: 1
 ```
 
-Triage sees Bob as current. Squad sees Alice, Carol, and Bob. Promotion achieves the intent without unintentionally undoing an assignment made by Squad.
+Triage sees Bob as assignee. Squad sees Alice, Carol, and Bob all as assignees. Promotion achieves the intent without unintentionally undoing an assignment to Carol that Squad asserted.
 
 ### New value, multiple claims
 
 If the asserted value is not present and multiple claims exist, the new value is asserted without retraction.
 
-Triage reads Carol as the latest and reassigns to Dana:
+Triage reads Carol as the latest and asserts Dana as an assignee, capturing provenance to latest assignment:
 
 ```yaml
 assert!:
-  the:   issue/assignee
-  of:    did:key:zIssue42
-  is:    did:key:zDana
-  cause: { by: did:key:zHome, period: 3, moment: 9 }
+  the: issue/assignee
+  of: did:key:zIssue42
+  is: did:key:zDana
+  cause:
+  	by: did:key:zSquad
+  	period: 4
+  	moment: 2
 ```
 
-Dana is new and multiple claims exist, so she is asserted without retracting Carol:
+Assignment for Dana does not exists, however multiple other assignments exist, so transactor asserts Dana without retracting Carol, despite causal relation:
 
 ```yaml
 - the: issue/assignee
+- the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zAlice
-  cause: { by: did:key:zHome, period: 3, moment: 7 }
+  cause:
+  	by: did:key:zSquad
+  	period: 2
+  	moment: 3
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zBob
-  cause: { by: did:key:zHome, period: 3, moment: 8 }
+  cause:
+  	by: did:key:zSquad
+  	period: 3
+  	moment: 8
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zCarol
-  cause: { by: did:key:zHome, period: 3, moment: 9 }
+  cause:
+  	by: did:key:zSquad
+  	period: 4
+  	moment: 2
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zDana
-  cause: { by: did:key:zWork, period: 4, moment: 1 }  # ← latest
+  cause:
+  	by: did:key:zTriage
+  	period: 5
+  	moment: 7
 ```
 
-Triage queries the latest and gets Dana. Squad sees all four assignees. Retracting Carol would have accomplished Triage's intent but also undone an assignment Squad made intentionally. If Triage wants to explicitly remove an assignee, it can do so through retraction.
+Triage sees Dana as assignee. Squad sees Alice, Bob, Carol and Dana as assignees. Retracting Bob would have accomplished Triage's intent, but would have undone Squad's assignment. Retracting Bob perhaps would not have being particularly confusing, however that was not Triage's intention it would have being side-effect of it's intention within the cardinality one constraint. If Triage's intent was to unassign Carol, that could have being accomplished through explicit retraction.
 
 ### New value, sole claim
 
-If the asserted value is not present and `cause` is the only claim, it is retracted and the new value asserted in its place.
+If the asserted value is not present and `cause`al relation is to sole claim, it is retracted and the new value asserted in its place.
 
-Squad has assigned Alice as the sole assignee:
+Here we consider different starting condition, where Squad has assigned Alice as the sole assignee:
 
 ```yaml
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zAlice
-  cause: { by: did:key:zHome, period: 3, moment: 7 }  # ← only claim
+  cause:
+  	by: did:key:zHome
+  	period: 3
+  	moment: 7
 ```
 
-Triage reads Alice as the latest and reassigns to Bob:
+Triage sees Alice as assignee and reassigns issue to Bob:
 
 ```yaml
 assert!:
-  the:   issue/assignee
-  of:    did:key:zIssue42
-  is:    did:key:zBob
-  cause: { by: did:key:zHome, period: 3, moment: 7 }
+  the: issue/assignee
+  of: did:key:zIssue42
+  is: did:key:zBob
+  cause:
+  	by: did:key:zHome
+  	period: 3
+  	moment: 7
 ```
 
-Alice is the only claim, so she is retracted and Bob asserted in her place:
+Alice is the sole, causally linked, claim, therefor transactor retracts and asserts Bob as assignee:
 
 ```yaml
 - the: issue/assignee
   of:  did:key:zIssue42
   is:  did:key:zBob
-  cause: { by: did:key:zHome, period: 3, moment: 8 }  # ← latest; alice retracted
+  cause:
+  	by: did:key:zWork
+  	period: 4
+  	moment: 1
 ```
 
-From Squad's perspective an assignee it added was replaced by Triage, which is arguably more disruptive than simply asserting without retraction. Still, the behavior is within reason and offers a fair compromise keeping cardinality a semantic layer concern.
+From Squad's perspective an assignee it added was replaced by Triage, which is arguably more disruptive than simply asserting without retraction. Still, behavior is within the reason and offers a fair compromise that allows keeping cardinality a semantic layer concern.
 
-An alternative would carry cardinality into the associative layer so the transactor could detect that the sole existing claim was asserted with cardinality-many and proceed without retraction. This would make this case consistent with the multi-claim case, but at the cost of leaking cardinality into the associative layer — precisely what the two-layer design is meant to avoid.
+## Closing Thoughts
+
+An alternative design could carry cardinality information into the associative layer and allow transactor to detect that the sole claim is asserted with cardinality-many and assert without retraction. This would make this case consistent with the multi-claim case, but at the cost of leaking cardinality into the associative layer. It also would introduce additional complexity with concurrent updates where multiple cardinality one assertions may exists, where it would not be obvious if new assertion would need to retract both or just assert new.
