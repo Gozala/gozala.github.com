@@ -155,8 +155,8 @@ This project replaced [TomTom Home][tomtom-home] desktop application _(Primarily
 [Actor Model]:https://en.wikipedia.org/wiki/Actor_model
 [parser combinators]:https://en.wikipedia.org/wiki/Parser_combinator
 [user research]:https://github.com/browserhtml/browserhtml/releases/tag/0.15.0
-[trails]:https://medium.freecodecamp.org/lossless-web-navigation-with-trails-9cd48c0abb56
-[spacial-ui]: https://medium.com/free-code-camp/lossless-web-navigation-spatial-model-37f83438201d
+[trails]:./trails
+[spacial-ui]:./spacial-ui
 [ipdf]:https://github.com/gozala/ipdf/
 [end-user programming]:https://www.inkandswitch.com/end-user-programming.html
 [Dialog]:https://github.com/dialog-db/
